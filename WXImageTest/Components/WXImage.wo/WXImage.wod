@@ -1,0 +1,7 @@
+Image: WOXMLNode {
+	alt = ^alt;
+	border = ^border;
+	elementName = "img";
+	mimetype = ^mimeType;
+	src = src;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="com.mysql.jdbc.Driver"/>
+<fullyQualifiedTypeName name="webobjectsexamples.businesslogic.movies.common.Movie"/>
+</qualifiedTypeNameHistroy>

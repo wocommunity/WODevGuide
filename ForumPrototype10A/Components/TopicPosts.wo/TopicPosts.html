@@ -1,0 +1,62 @@
+<webobject name = "ForumTemplate">
+  <table cellspacing = "0" cellpadding = "0" border = "0" width = "100%">
+    <tr>
+      <th align = "LEFT">
+        <font size = "2">
+          <webobject name = "HomeLink">Home</webobject>
+          &gt; 
+          <webobject name = "TopicsLink" />
+          &gt; 
+        </font>
+        <font size = "2"><webobject name = "TopicName" /></font>
+      </th>
+      <th align = "RIGHT">
+        <font size = "2">
+          <webobject name = "ArchiveLink">Archive</webobject>
+        </font>
+      </th>
+    </tr>
+  </table>
+  <p />
+  <table cellspacing = "1" cellpadding = "4" border = "0" width = "100%" bgcolor = "#aaaaaa">
+    <tr bgcolor = "e0e0e0">
+      <td colspan = "2"><webobject name = "BatchNavigationBar" /></td>
+    </tr>
+    <tr bgcolor = "#e9e9e9">
+      <th align = "LEFT">Author</th>
+      <th align = "LEFT"><webobject name = "TopicName" /></th>
+    </tr>
+    <webobject name = "RowRepetition">
+      <tr bgcolor = "#ffffff" valign = "TOP">
+        <td valign = "TOP">
+          <font size = "2">
+            <webobject name = "UserName" />
+            <br />
+            <b><webobject name = "UserPostsCount" /></b>
+            post(s)</font>
+        </td>
+        <td>
+          <table cellspacing = "0" cellpadding = "0" border = "0" width = "100%">
+            <tr>
+              <td>
+                <font size = "2">
+                  <webobject name = "PostImage" />
+                  <webobject name = "PostTime" />&nbsp;&nbsp;<webobject name = "Conditional1">$ <webobject name = "DownloadLink" /></webobject>
+                </font>
+              </td>
+              <webobject name = "DisplayReplyConditional">
+                <td align = "RIGHT">
+                  <font size = "2">
+                    <webobject name = "EmailLink"><webobject name = "EmailImage" /></webobject>&nbsp;<webobject name = "ReplyLink"><webobject name = "ReplyImage" /></webobject>
+                  </font>
+                </td>
+              </webobject>
+            </tr>
+          </table>
+          <p />
+          <i><webobject name = "PostMessage" /></i>
+        </td>
+      </tr>
+    </webobject>
+  </table>
+</webobject>

@@ -1,0 +1,13 @@
+ForumTemplate: SimpleForumTemplate {
+	title = "Search";
+}
+
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+SearchForm: WOForm {
+	directActionName = "results";
+	actionClass = "SearchAction";
+}

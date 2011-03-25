@@ -1,0 +1,8 @@
+{
+    FetchAll = {
+        class = EOFetchSpecification; 
+        entityName = Forum; 
+        fetchLimit = 0; 
+        prefetchingRelationshipKeyPaths = (moderators); 
+    }; 
+}

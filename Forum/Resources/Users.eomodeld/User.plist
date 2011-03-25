@@ -1,0 +1,103 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = CLASS_NAME; 
+            externalType = char; 
+            name = className; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = EMAIL; 
+            externalType = char; 
+            name = email; 
+            valueClassName = NSString; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = FIRST_NAME; 
+            externalType = char; 
+            name = firstName; 
+            valueClassName = NSString; 
+            width = 25; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = LAST_NAME; 
+            externalType = char; 
+            name = lastName; 
+            valueClassName = NSString; 
+            width = 25; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NAME; 
+            externalType = char; 
+            name = name; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = PASSWORD; 
+            externalType = char; 
+            name = password; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT COUNT(*) FROM POST WHERE POST.USER_ID = USER.USER_ID)"; 
+            externalType = long; 
+            name = postsCount; 
+            readFormat = "(SELECT COUNT(*) FROM POST WHERE POST.USER_ID = USER.USER_ID)"; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = SIGNATURE; 
+            externalType = char; 
+            name = signature; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            columnName = USER_ID; 
+            externalType = long; 
+            name = userID; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (userID, name, lastName, firstName, email, password, className, signature); 
+    className = biz.forum.model.User; 
+    classProperties = (
+        name, 
+        lastName, 
+        firstName, 
+        email, 
+        password, 
+        className, 
+        posts, 
+        postsCount, 
+        signature
+    ); 
+    externalName = USER; 
+    fetchSpecificationDictionary = {}; 
+    isAbstractEntity = Y; 
+    name = User; 
+    primaryKeyAttributes = (userID); 
+    relationships = (
+        {
+            destination = Post; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userID; sourceAttribute = userID; }); 
+            name = posts; 
+        }
+    ); 
+}

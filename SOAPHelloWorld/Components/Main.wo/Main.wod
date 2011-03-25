@@ -1,0 +1,3 @@
+SOAPNameString: WOString {
+	value = myName;
+}

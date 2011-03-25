@@ -1,0 +1,17 @@
+Hyperlink1: WOHyperlink {
+	onMouseOut = onMouseOut;
+	directActionName = "default";
+	onMouseOver = onMouseOver;
+	actionClass = "DirectAction";
+}
+
+Image1: WOImage {
+	border = 0;
+	filename = unhighlightedImage;
+	name = imageName;
+}
+
+JavaScript1: WOJavaScript {
+	scriptString = scriptString;
+	hideInComment = true;
+}

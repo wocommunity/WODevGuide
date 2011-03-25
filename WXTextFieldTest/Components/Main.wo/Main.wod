@@ -1,0 +1,13 @@
+Form1: WOForm {
+	action = action;
+}
+
+WXTextField: WXTextField {
+	value = date;
+	dateFormat = "%d.%m.%y";
+}
+
+WXTextField2: WXTextField {
+	value = number;
+	numberFormat = "$#,##0.00";
+}

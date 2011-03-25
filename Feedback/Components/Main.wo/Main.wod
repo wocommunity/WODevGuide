@@ -1,0 +1,21 @@
+Form1: WOForm {
+	directActionName = "feedback";
+	actionClass = "DirectAction";
+}
+
+Text1: WOText {
+	name = "contents";
+	value = contents;
+	cols = 30;
+	rows = 5;
+}
+
+TextField1: WOTextField {
+	name = "from";
+	value = from;
+}
+
+TextField2: WOTextField {
+	name = "subject";
+	value = subject;
+}

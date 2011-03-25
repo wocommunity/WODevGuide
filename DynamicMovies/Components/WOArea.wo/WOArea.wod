@@ -1,0 +1,7 @@
+Area: WOGenericElement {
+	coords = ^coords;
+	elementName = "area";
+	href = href;
+	shape = ^shape;
+	onMouseOver = ^onMouseOver;
+}

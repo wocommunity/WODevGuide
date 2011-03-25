@@ -1,0 +1,1667 @@
+!SESSION 2009-12-28 18:52:55.998 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.5.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=fr_FR
+Framework arguments:  -keyring /Users/probert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/probert/Clients/WOCommunity/WODevGuide -keyring /Users/probert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2009-12-28 18:53:10.795
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2009-12-28 18:53:30.090
+!MESSAGE Part already exists in page layout: org.eclipse.ui.console.ConsoleView.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2009-12-28 19:02:13.602
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2009-12-28 19:02:13.605
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+
+!ENTRY org.eclipse.debug.ui 4 0 2009-12-28 19:04:41.449
+!MESSAGE Launch shortcut 'org.objectstyle.wolips.launching.ERXMainApplicationLaunchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.jdt.debug.ui.hasMainType to type class org.eclipse.core.internal.resources.File
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:109)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:736)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:772)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:492)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:307)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:228)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2009-12-28 19:04:41.450
+!MESSAGE No property tester contributes a property org.eclipse.jdt.debug.ui.hasMainType to type class org.eclipse.core.internal.resources.File
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-12-28 19:17:58.402
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-12-28 19:17:58.403
+!MESSAGE Conflict for 'org.eclipse.ui.part.previousPage':
+HandlerActivation(commandId=org.eclipse.ui.part.previousPage,
+	handler=org.eclipse.ui.internal.handlers.CyclePageHandler@edd048,
+	expression=AndExpression(ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@f3dcf0)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.ui.part.previousPage,
+	handler=org.eclipse.ui.internal.handlers.CyclePageHandler@558af,
+	expression=AndExpression(ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@f3dcf0)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2009-12-28 19:17:58.404
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2009-12-28 19:17:58.404
+!MESSAGE Conflict for 'org.eclipse.ui.part.nextPage':
+HandlerActivation(commandId=org.eclipse.ui.part.nextPage,
+	handler=org.eclipse.ui.internal.handlers.CyclePageHandler@113ea2,
+	expression=AndExpression(ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@f3dcf0)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.ui.part.nextPage,
+	handler=org.eclipse.ui.internal.handlers.CyclePageHandler@2707f8,
+	expression=AndExpression(ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),ActivePartExpression(org.objectstyle.wolips.componenteditor.part.ComponentEditor@fb6d01),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@f3dcf0)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2009-12-28 19:18:51.283
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.views.ContentOutline while still in the middle of activating part org.objectstyle.wolips.eomodeler.editors.EOModelEditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.views.ContentOutline while still in the middle of activating part org.objectstyle.wolips.eomodeler.editors.EOModelEditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3441)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:3034)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:272)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:236)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1561)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1585)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1566)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1439)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2949)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:1006)
+	at org.eclipse.swt.widgets.Control.setFocus(Control.java:3427)
+	at org.eclipse.swt.widgets.Composite.setFocus(Composite.java:921)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.setFocus(ContentOutlinePage.java:164)
+	at org.objectstyle.wolips.eomodeler.editors.EOModelEditor.fireSelectionChanged(EOModelEditor.java:706)
+	at org.objectstyle.wolips.eomodeler.editors.EOModelEditor.setSelection(EOModelEditor.java:1166)
+	at org.objectstyle.wolips.eomodeler.editors.EOModelEditor$EOModelContentSelectionChangedListener.selectionChanged(EOModelEditor.java:271)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage$1.run(ContentOutlinePage.java:99)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.fireSelectionChanged(ContentOutlinePage.java:97)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelContentOutlinePage.fireSelectionChanged(EOModelContentOutlinePage.java:229)
+	at org.eclipse.ui.views.contentoutline.ContentOutlinePage.selectionChanged(ContentOutlinePage.java:157)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelContentOutlinePage.selectionChanged(EOModelContentOutlinePage.java:233)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:162)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:880)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:48)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:160)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2062)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1638)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1104)
+	at org.eclipse.jface.viewers.Viewer.setSelection(Viewer.java:392)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelTreeViewUpdater.showModel(EOModelTreeViewUpdater.java:119)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelTreeViewUpdater.setInput(EOModelTreeViewUpdater.java:138)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelTreeViewUpdater.setModel(EOModelTreeViewUpdater.java:102)
+	at org.objectstyle.wolips.eomodeler.outline.EOModelContentOutlinePage.createControl(EOModelContentOutlinePage.java:153)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.doCreatePage(ContentOutline.java:137)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:399)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:741)
+	at org.eclipse.ui.views.contentoutline.ContentOutline.partBroughtToTop(ContentOutline.java:212)
+	at org.eclipse.ui.internal.PartListenerList$2.run(PartListenerList.java:87)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:880)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartBroughtToTop(PartListenerList.java:85)
+	at org.eclipse.ui.internal.PartService.firePartBroughtToTop(PartService.java:207)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.firePartBroughtToTop(WorkbenchPagePartList.java:75)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActiveEditorChanged(WorkbenchPagePartList.java:51)
+	at org.eclipse.ui.internal.PartList.setActiveEditor(PartList.java:152)
+	at org.eclipse.ui.internal.WorkbenchPage.makeActiveEditor(WorkbenchPage.java:1259)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3484)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:610)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2832)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2729)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2721)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2673)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2668)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2652)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2635)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:708)
+	at org.objectstyle.wolips.eomodeler.actions.OpenEntityModelerAction.openResourceIfPossible(OpenEntityModelerAction.java:165)
+	at org.objectstyle.wolips.eomodeler.eclipse.PackageExplorerDoubleClickHandler.doubleClick(PackageExplorerDoubleClickHandler.java:244)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:799)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:880)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:48)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1419)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1173)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:237)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:234)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:295)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1561)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1585)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1570)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1360)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3482)
+	at org.eclipse.swt.widgets.Control.sendTrackEvents(Control.java:3024)
+	at org.eclipse.swt.widgets.Control.kEventControlTrack(Control.java:2104)
+	at org.eclipse.swt.widgets.Widget.controlProc(Widget.java:375)
+	at org.eclipse.swt.widgets.Display.controlProc(Display.java:862)
+	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
+	at org.eclipse.swt.widgets.Tree.kEventMouseDown(Tree.java:2599)
+	at org.eclipse.swt.widgets.Widget.mouseProc(Widget.java:1326)
+	at org.eclipse.swt.widgets.Display.mouseProc(Display.java:2929)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2382)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2346)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:386)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 20:28:58.792
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 20:28:58.792
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error: null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.team.svn.core.svnstorage.AbstractSVNStorage.repositoryLocationAsReference(AbstractSVNStorage.java:252)
+	at org.eclipse.team.svn.core.SVNTeamProvider.setRepositoryLocation(SVNTeamProvider.java:143)
+	at org.eclipse.team.svn.core.SVNTeamProvider.relocateResource(SVNTeamProvider.java:84)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResourceImpl(SVNRemoteStorage.java:471)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResources(SVNRemoteStorage.java:341)
+	at org.eclipse.team.svn.core.ResourceChangeListener$1.runImpl(ResourceChangeListener.java:95)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:76)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:37)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:103)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:89)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1$1.run(ProgressMonitorUtility.java:59)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1.run(ProgressMonitorUtility.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:43:54.009
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isType(BindingReflectionUtils.java:164)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isNSKeyValueCoding(BindingReflectionUtils.java:154)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:170)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:43:54.010
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:43:54.012
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isType(BindingReflectionUtils.java:164)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isNSKeyValueCoding(BindingReflectionUtils.java:154)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:170)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:43:54.012
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:51:43.831
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.internal.build.FullBuildDeltaVisitor.notifyBuilderHandleOther(FullBuildDeltaVisitor.java:153)
+	at org.objectstyle.wolips.core.resources.internal.build.FullBuildDeltaVisitor.visit(FullBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:58)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:81)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:126)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:68)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:131)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:51:43.832
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:51:43.849
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.internal.build.FullBuildDeltaVisitor.notifyBuilderHandleOther(FullBuildDeltaVisitor.java:153)
+	at org.objectstyle.wolips.core.resources.internal.build.FullBuildDeltaVisitor.visit(FullBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:58)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:81)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:126)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:68)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:131)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:51:43.849
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:20.392
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:20.393
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:20.394
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:20.395
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:21.323
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:21.324
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:21.326
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:21.326
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:21.641
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:21.642
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:21.760
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:21.760
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:22.293
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:22.293
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 20:55:22.296
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 20:55:22.296
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 21:00:38.598
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 21:00:38.599
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 21:00:38.600
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 21:00:38.601
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 21:05:37.161
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [DynamicMovies does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isType(BindingReflectionUtils.java:164)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isNSKeyValueCoding(BindingReflectionUtils.java:154)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:170)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 21:05:37.161
+!MESSAGE DynamicMovies does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 21:05:37.242
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [DynamicMovies does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isType(BindingReflectionUtils.java:164)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.isNSKeyValueCoding(BindingReflectionUtils.java:154)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:170)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder$ValidatingComponent.run(WodBuilder.java:300)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:651)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:676)
+	at java.lang.Thread.run(Thread.java:613)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 21:05:37.242
+!MESSAGE DynamicMovies does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:29:45.278
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [DynamicMovies does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:29:45.279
+!MESSAGE DynamicMovies does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:29:45.292
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [DynamicMovies does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:29:45.292
+!MESSAGE DynamicMovies does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:42:08.869
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [WOMappedRolloverTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:42:08.870
+!MESSAGE WOMappedRolloverTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:42:08.871
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [WOMappedRolloverTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleSource(WodBuilder.java:122)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleSourceDelta(AbstractFullAndIncrementalBuilder.java:59)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleSourceDelta(IncrementalBuildDeltaVisitor.java:132)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:90)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:42:08.871
+!MESSAGE WOMappedRolloverTest does not exist
+
+!ENTRY org.eclipse.ui 4 0 2009-12-28 22:43:03.991
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.SubActionBars.clearGlobalActionHandlers(SubActionBars.java:197)
+	at org.eclipse.ui.SubActionBars.dispose(SubActionBars.java:251)
+	at org.eclipse.ui.SubActionBars2.dispose(SubActionBars2.java:106)
+	at org.eclipse.ui.internal.EditorActionBars.dispose(EditorActionBars.java:146)
+	at org.eclipse.ui.internal.EditorManager.disposeEditorActionBars(EditorManager.java:368)
+	at org.eclipse.ui.internal.EditorReference.doDisposePart(EditorReference.java:305)
+	at org.eclipse.ui.internal.WorkbenchPartReference.dispose(WorkbenchPartReference.java:681)
+	at org.eclipse.ui.internal.WorkbenchPage.disposePart(WorkbenchPage.java:1682)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1389)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1373)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1347)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1411)
+	at org.eclipse.ui.internal.CloseEditorHandler.execute(CloseEditorHandler.java:47)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:281)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:472)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:824)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:882)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:571)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:512)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1560)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1585)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1570)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Control.kEventUnicodeKeyPressed(Control.java:2292)
+	at org.eclipse.swt.widgets.Composite.kEventUnicodeKeyPressed(Composite.java:586)
+	at org.eclipse.swt.widgets.Tree.kEventUnicodeKeyPressed(Tree.java:2551)
+	at org.eclipse.swt.widgets.Control.kEventTextInputUnicodeForKeyEvent(Control.java:2254)
+	at org.eclipse.swt.widgets.Widget.textInputProc(Widget.java:1995)
+	at org.eclipse.swt.widgets.Display.textInputProc(Display.java:3970)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2382)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2346)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:386)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.ui 4 0 2009-12-28 22:43:19.072
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.SubActionBars.clearGlobalActionHandlers(SubActionBars.java:197)
+	at org.eclipse.ui.SubActionBars.dispose(SubActionBars.java:251)
+	at org.eclipse.ui.SubActionBars2.dispose(SubActionBars2.java:106)
+	at org.eclipse.ui.internal.EditorActionBars.dispose(EditorActionBars.java:146)
+	at org.eclipse.ui.internal.EditorManager.disposeEditorActionBars(EditorManager.java:368)
+	at org.eclipse.ui.internal.EditorReference.doDisposePart(EditorReference.java:305)
+	at org.eclipse.ui.internal.WorkbenchPartReference.dispose(WorkbenchPartReference.java:681)
+	at org.eclipse.ui.internal.WorkbenchPage.disposePart(WorkbenchPage.java:1682)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1389)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1373)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1347)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1411)
+	at org.eclipse.ui.internal.CloseEditorHandler.execute(CloseEditorHandler.java:47)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:281)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:472)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:824)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:882)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:571)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:512)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1560)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1585)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1570)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Control.kEventUnicodeKeyPressed(Control.java:2292)
+	at org.eclipse.swt.widgets.Composite.kEventUnicodeKeyPressed(Composite.java:586)
+	at org.eclipse.swt.widgets.Tree.kEventUnicodeKeyPressed(Tree.java:2551)
+	at org.eclipse.swt.widgets.Control.kEventTextInputUnicodeForKeyEvent(Control.java:2254)
+	at org.eclipse.swt.widgets.Widget.textInputProc(Widget.java:1995)
+	at org.eclipse.swt.widgets.Display.textInputProc(Display.java:3970)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2382)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2346)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:386)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.ui 4 0 2009-12-28 22:43:22.728
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.SubActionBars.clearGlobalActionHandlers(SubActionBars.java:197)
+	at org.eclipse.ui.SubActionBars.dispose(SubActionBars.java:251)
+	at org.eclipse.ui.SubActionBars2.dispose(SubActionBars2.java:106)
+	at org.eclipse.ui.internal.EditorActionBars.dispose(EditorActionBars.java:146)
+	at org.eclipse.ui.internal.EditorManager.disposeEditorActionBars(EditorManager.java:368)
+	at org.eclipse.ui.internal.EditorReference.doDisposePart(EditorReference.java:305)
+	at org.eclipse.ui.internal.WorkbenchPartReference.dispose(WorkbenchPartReference.java:681)
+	at org.eclipse.ui.internal.WorkbenchPage.disposePart(WorkbenchPage.java:1682)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1389)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1373)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1347)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1411)
+	at org.eclipse.ui.internal.CloseEditorHandler.execute(CloseEditorHandler.java:47)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:281)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(WorkbenchKeyboard.java:472)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(WorkbenchKeyboard.java:824)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(WorkbenchKeyboard.java:882)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.filterKeySequenceBindings(WorkbenchKeyboard.java:571)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard.access$3(WorkbenchKeyboard.java:512)
+	at org.eclipse.ui.internal.keys.WorkbenchKeyboard$KeyDownFilter.handleEvent(WorkbenchKeyboard.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1560)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1585)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1570)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1617)
+	at org.eclipse.swt.widgets.Control.kEventUnicodeKeyPressed(Control.java:2292)
+	at org.eclipse.swt.widgets.Composite.kEventUnicodeKeyPressed(Composite.java:586)
+	at org.eclipse.swt.widgets.Tree.kEventUnicodeKeyPressed(Tree.java:2551)
+	at org.eclipse.swt.widgets.Control.kEventTextInputUnicodeForKeyEvent(Control.java:2254)
+	at org.eclipse.swt.widgets.Widget.textInputProc(Widget.java:1995)
+	at org.eclipse.swt.widgets.Display.textInputProc(Display.java:3970)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2382)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2346)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:386)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 22:44:10.964
+!MESSAGE SVN: '0x00000111: Get Resource List' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 22:44:10.964
+!MESSAGE Get all resources operation failed.
+!STACK 0
+org.eclipse.team.svn.core.connector.SVNConnectorException: svn: This client is too old to work with working copy '/Users/probert/Clients/WOCommunity/WODevGuide/ForumPrototype10A/Sources'; please get a newer Subversion client
+	at org.polarion.team.svn.connector.svnkit.SVNKitConnector.handleClientException(SVNKitConnector.java:1298)
+	at org.polarion.team.svn.connector.svnkit.SVNKitConnector.status(SVNKitConnector.java:343)
+	at org.eclipse.team.svn.core.extension.factory.ThreadNameModifier.status(ThreadNameModifier.java:606)
+	at org.eclipse.team.svn.core.utility.SVNUtility.status(SVNUtility.java:329)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.getStatuses(SVNRemoteStorage.java:708)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.loadLocalResourcesSubTreeSVNImpl(SVNRemoteStorage.java:628)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.loadLocalResourcesSubTree(SVNRemoteStorage.java:520)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.getRegisteredChildren(SVNRemoteStorage.java:272)
+	at org.eclipse.team.svn.core.operation.local.GetAllResourcesOperation.runImpl(GetAllResourcesOperation.java:36)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:76)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:37)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:103)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:89)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:80)
+	at org.eclipse.team.svn.ui.synchronize.RemoteStatusCache.allMembers(RemoteStatusCache.java:115)
+	at org.eclipse.team.svn.ui.synchronize.AbstractSVNSubscriber.resourcesStateChangedImpl(AbstractSVNSubscriber.java:188)
+	at org.eclipse.team.svn.ui.synchronize.AbstractSVNSubscriber.resourcesStateChanged(AbstractSVNSubscriber.java:161)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage$3.runImpl(SVNRemoteStorage.java:151)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:76)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:37)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:103)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:89)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1$1.run(ProgressMonitorUtility.java:59)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1.run(ProgressMonitorUtility.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.tigris.subversion.javahl.ClientException: svn: This client is too old to work with working copy '/Users/probert/Clients/WOCommunity/WODevGuide/ForumPrototype10A/Sources'; please get a newer Subversion client
+	at org.tigris.subversion.javahl.JavaHLObjectFactory.throwException(JavaHLObjectFactory.java:607)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.throwException(SVNClientImpl.java:1389)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.status(SVNClientImpl.java:223)
+	at org.polarion.team.svn.connector.svnkit.SVNKitConnector.status(SVNKitConnector.java:335)
+	... 24 more
+Caused by: org.tmatesoft.svn.core.SVNException: svn: This client is too old to work with working copy '/Users/probert/Clients/WOCommunity/WODevGuide/ForumPrototype10A/Sources'; please get a newer Subversion client
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.error(SVNErrorManager.java:55)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.error(SVNErrorManager.java:40)
+	at org.tmatesoft.svn.core.internal.wc.admin.SVNAdminAreaFactory.open(SVNAdminAreaFactory.java:132)
+	at org.tmatesoft.svn.core.internal.wc.admin.SVNWCAccess.doOpen(SVNWCAccess.java:349)
+	at org.tmatesoft.svn.core.internal.wc.admin.SVNWCAccess.doOpen(SVNWCAccess.java:377)
+	at org.tmatesoft.svn.core.internal.wc.admin.SVNWCAccess.open(SVNWCAccess.java:261)
+	at org.tmatesoft.svn.core.internal.wc.admin.SVNWCAccess.openAnchor(SVNWCAccess.java:153)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:223)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:174)
+	at org.tmatesoft.svn.core.javahl.SVNClientImpl.status(SVNClientImpl.java:217)
+	... 25 more
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:44.796
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:44.796
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:44.799
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:44.799
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:44.930
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:44.930
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:44.932
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEightsTest does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:44.932
+!MESSAGE CrazyEightsTest does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:45.080
+!MESSAGE Failed to check wod binding values.
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:45.080
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.objectstyle.wolips.bindings.ActivatorResources 4 4 2009-12-28 22:44:45.082
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [CrazyEights does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:766)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:802)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:754)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:122)
+	at org.objectstyle.wolips.core.resources.types.SuperTypeHierarchyCache.getTypeHierarchy(SuperTypeHierarchyCache.java:83)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getSupertypes(TypeCache.java:251)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getSupertypesOf(TypeCache.java:122)
+	at org.objectstyle.wolips.bindings.utils.BindingReflectionUtils.getBindingKeys(BindingReflectionUtils.java:204)
+	at org.objectstyle.wolips.bindings.wod.TypeCache$TypeCacheEntry.getBindingValueAccessorKeys(TypeCache.java:169)
+	at org.objectstyle.wolips.bindings.wod.TypeCache.getBindingValueAccessorKeys(TypeCache.java:61)
+	at org.objectstyle.wolips.bindings.wod.BindingValueKeyPath.<init>(BindingValueKeyPath.java:146)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodBinding.fillInBindingProblems(AbstractWodBinding.java:253)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodElement.fillInProblems(AbstractWodElement.java:316)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.fillInProblems(AbstractWodModel.java:138)
+	at org.objectstyle.wolips.bindings.wod.AbstractWodModel.getProblems(AbstractWodModel.java:117)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodCacheEntry.validate(WodCacheEntry.java:36)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache._validate(WodParserCache.java:341)
+	at org.objectstyle.wolips.wodclipse.core.completion.WodParserCache.validate(WodParserCache.java:285)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder._validateComponent(WodBuilder.java:280)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateComponent(WodBuilder.java:258)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.validateWodFile(WodBuilder.java:249)
+	at org.objectstyle.wolips.wodclipse.core.builder.WodBuilder.handleOther(WodBuilder.java:185)
+	at org.objectstyle.wolips.core.resources.builder.AbstractFullAndIncrementalBuilder.handleOtherDelta(AbstractFullAndIncrementalBuilder.java:75)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.notifyBuilderHandleOtherDelta(IncrementalBuildDeltaVisitor.java:152)
+	at org.objectstyle.wolips.core.resources.internal.build.IncrementalBuildDeltaVisitor.visit(IncrementalBuildDeltaVisitor.java:86)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:68)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:79)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.objectstyle.wolips.core.resources.internal.build.Builder.build(Builder.java:135)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:633)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2009-12-28 22:44:45.083
+!MESSAGE CrazyEights does not exist
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 22:45:47.391
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2009-12-28 22:45:47.442
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error: null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.team.svn.core.svnstorage.AbstractSVNStorage.repositoryLocationAsReference(AbstractSVNStorage.java:252)
+	at org.eclipse.team.svn.core.SVNTeamProvider.setRepositoryLocation(SVNTeamProvider.java:143)
+	at org.eclipse.team.svn.core.SVNTeamProvider.relocateResource(SVNTeamProvider.java:84)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResourceImpl(SVNRemoteStorage.java:471)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResources(SVNRemoteStorage.java:341)
+	at org.eclipse.team.svn.core.ResourceChangeListener$1.runImpl(ResourceChangeListener.java:95)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:76)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:37)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:103)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:89)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1$1.run(ProgressMonitorUtility.java:59)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1.run(ProgressMonitorUtility.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2010-01-03 08:15:50.300 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.5.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=fr_FR
+Framework arguments:  -keyring /Users/probert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/probert/Clients/WOCommunity/WODevGuide -keyring /Users/probert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-01-03 08:15:57.941
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2010-01-03 08:16:11.674
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2010-01-03 08:16:11.675
+!MESSAGE SVN: '0x00000003: Resources Changed' operation finished with error: null
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.team.svn.core.svnstorage.AbstractSVNStorage.repositoryLocationAsReference(AbstractSVNStorage.java:252)
+	at org.eclipse.team.svn.core.SVNTeamProvider.setRepositoryLocation(SVNTeamProvider.java:143)
+	at org.eclipse.team.svn.core.SVNTeamProvider.relocateResource(SVNTeamProvider.java:84)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResourceImpl(SVNRemoteStorage.java:471)
+	at org.eclipse.team.svn.core.svnstorage.SVNRemoteStorage.refreshLocalResources(SVNRemoteStorage.java:341)
+	at org.eclipse.team.svn.core.ResourceChangeListener$1.runImpl(ResourceChangeListener.java:95)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:76)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:37)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:103)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:89)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1$1.run(ProgressMonitorUtility.java:59)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility$1.run(ProgressMonitorUtility.java:57)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2010-01-04 06:05:51.738 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.5.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=fr_FR
+Framework arguments:  -keyring /Users/probert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/probert/Clients/WOCommunity/WODevGuide -keyring /Users/probert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-01-04 06:06:08.743
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-01-04 06:15:08.785
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-01-04 06:15:08.789
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+!SESSION 2010-01-04 12:56:37.166 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.5.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=fr_FR
+Framework arguments:  -keyring /Users/probert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -keyring /Users/probert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-01-04 12:56:51.963
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-01-04 12:56:52.449
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-01-04 12:56:52.465
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+!SESSION 2010-02-05 20:03:10.826 -----------------------------------------------
+eclipse.buildId=M20080911-1700
+java.version=1.5.0_22
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=fr_FR
+Framework arguments:  -keyring /Users/probert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/probert/Clients/WOCommunity/WODevGuide -keyring /Users/probert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-02-05 20:03:20.580
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-02-05 20:03:21.086
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2010-02-05 20:03:21.091
+!MESSAGE Project facet jst.web has not been defined. It is used in plugin org.eclipse.wst.jsdt.web.core.

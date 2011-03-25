@@ -1,0 +1,24 @@
+{
+    "name" = "splashmap";
+    "areas" = ({
+        "shape" = "rect";
+        "coords" = "221,151,289,188";
+        "directActionName" = "default";
+	"imageOnMouseOver" = "splash_addH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "30,94,245,173";
+        "directActionName" = "default";
+	"imageOnMouseOver" = "splash_searchH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "176,66,283,111";
+        "directActionName" = "default";
+	"imageOnMouseOver" = "splash_indexH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "234,103,295,142";
+        "directActionName" = "default";
+	"imageOnMouseOver" = "splash_helpH.gif";
+    });
+}

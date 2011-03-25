@@ -1,0 +1,71 @@
+{
+    attributes = (
+        {
+            columnName = FORUM_ID; 
+            externalType = long; 
+            name = forumID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NAME; 
+            externalType = char; 
+            name = name; 
+            valueClassName = NSString; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT COUNT(*) FROM POST, TOPIC WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID AND TOPIC.FORUM_ID = FORUM.FORUM_ID)"; 
+            externalType = long; 
+            isReadOnly = Y; 
+            name = postsCount; 
+            readFormat = "(SELECT COUNT(*) FROM POST, TOPIC WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID AND TOPIC.FORUM_ID = FORUM.FORUM_ID)"; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT COUNT(*) FROM TOPIC WHERE TOPIC.FORUM_ID = FORUM.FORUM_ID)"; 
+            externalType = long; 
+            name = topicsCount; 
+            readFormat = "(SELECT COUNT(*) FROM TOPIC WHERE TOPIC.FORUM_ID = FORUM.FORUM_ID)"; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (name, forumID); 
+    className = EOGenericRecord; 
+    classProperties = (name, topics, moderators, postsCount, topicsCount); 
+    externalName = FORUM; 
+    name = Forum; 
+    primaryKeyAttributes = (forumID); 
+    relationships = (
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ForumModerator; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = forumID; sourceAttribute = forumID; }); 
+            name = forumModerators; 
+            ownsDestination = Y; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = forumModerators.user; 
+            joinSemantic = EOInnerJoin; 
+            name = moderators; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = Topic; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = forumID; sourceAttribute = forumID; }); 
+            name = topics; 
+        }
+    ); 
+    sharedObjectFetchSpecificationNames = (FetchAll); 
+}

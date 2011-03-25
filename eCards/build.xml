@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="eCards">
+	<target depends="init.build,build.woapp,javaclient,ssdd,war,split,package" name="build"/>
+
+	<target depends="init.install,build.woapp,javaclient,ssdd,war,split,package" name="install"/>
+
+	<target depends="init.properties" name="clean">
+		<delete dir="bin"/>
+		<delete dir="dist"/>
+	</target>
+
+	<!-- basic initializations  -->
+	<target depends="init.properties" name="init.install">
+		<tstamp/>
+		<property name="dest.dir" value="${wo.apps.root}"/>
+	</target>
+
+	<target depends="init.properties" name="init.build">
+		<tstamp/>
+		<property name="dest.dir" value="dist"/>
+	</target>
+	
+	<!-- property determination  -->
+	<target name="init.properties">
+		<property file="build.properties"/>
+
+		<property name="wolips.properties" value="${user.home}${file.separator}Library${file.separator}Application Support${file.separator}WOLips${file.separator}wolips.properties"/>
+		<property file="${wolips.properties}"/>
+		<condition property="wo.properties.check.failed">
+			<not>
+				<and>
+					<isset property="wo.system.frameworks"/>
+					<isset property="wo.local.frameworks"/>
+				</and>
+			</not>
+		</condition>
+		<fail if="wo.properties.check.failed" message="The properties 'wo.system.frameworks' and 'wo.local.frameworks' must be set. Check that your ${wolips.properties} is correct."/>
+
+		<property name="build.app.name" value="${project.name}"/>
+		<property name="build.app.name.lowercase" value="${project.name.lowercase}"/>
+	</target>
+
+	<!-- This copies webserver resources from app.woa's embedded frameworks into split install bundle -->
+	<target description="Adds embedded framework webserver resources to the split install bundle by copying from deployment build bundle" name="split" unless="servletDeployment">
+		<property name="wsdest.dir" value="${dest.dir}/Split"/>
+		<mkdir dir="${wsdest.dir}"/>
+		<copy todir="${wsdest.dir}/WebObjects/${build.app.name}.woa" verbose="true">
+			<fileset dir="${dest.dir}/${build.app.name}.woa/Contents">
+				<include name="Frameworks/*.framework/WebServerResources/**"/>
+			</fileset>
+			<fileset dir="${dest.dir}/${build.app.name}.woa">
+				<include name="Contents/WebServerResources/**"/>
+			</fileset>
+		</copy>
+	</target>
+
+  <target name="package" unless="servletDeployment">
+    <tar compression="gzip" destfile="${dest.dir}/${build.app.name}-Application.tar.gz" longfile="gnu">
+      <tarfileset dir="${dest.dir}" mode="750">
+        <include name="${build.app.name}.woa/${build.app.name}"/>
+      </tarfileset>
+      <tarfileset dir="${dest.dir}">
+        <exclude name="${build.app.name}.woa/${build.app.name}"/>
+        <include name="${build.app.name}.woa/**"/>
+      </tarfileset>
+    </tar>
+    <tar basedir="${wsdest.dir}/WebObjects" compression="gzip" destfile="${dest.dir}/${build.app.name}-WebServerResources.tar.gz" includes="${build.app.name}.woa/**" longfile="gnu">
+    </tar>
+	</target>
+
+	<!-- woproject tasks -->
+	<target depends="compile" name="build.woapp">
+		<taskdef classname="org.objectstyle.woproject.ant.WOApplication" name="woapplication"/>
+
+		<woapplication customInfoPListContent="${customInfoPListContent}" destDir="${dest.dir}" frameworksBaseURL="/WebObjects/${build.app.name}.woa/Frameworks" name="${build.app.name}" principalClass="${principalClass}" servletAdaptor="com.webobjects.jspservlet.WOServletAdaptor" webXML="${webXML}" webXML_CustomContent="${webXML_CustomContent}">
+			<classes dir="${classes.dir}">
+				<includesfile name="woproject/classes.include.patternset"/>
+				<excludesfile name="woproject/classes.exclude.patternset"/>
+				<exclude if="javaClient" name="**/client/**/*.*"/>
+			</classes>
+
+			<wsresources dir=".">
+				<includesfile name="woproject/wsresources.include.patternset"/>
+				<excludesfile name="woproject/wsresources.exclude.patternset"/>
+			</wsresources>
+
+			<resources dir=".">
+				<includesfile name="woproject/resources.include.patternset"/>
+				<excludesfile name="woproject/resources.exclude.patternset"/>
+				<exclude if="javaClient" name="**/client/**/*.*"/>
+			</resources>
+
+			<frameworks eclipse="true" embed="${embed.ProjectLocal}" root="ProjectLocal"/>
+			<frameworks eclipse="true" embed="${embed.External}" root="External"/>
+			<frameworks eclipse="true" embed="${embed.Local}" root="Local"/>
+			<frameworks eclipse="true" embed="${embed.User}" root="User"/>
+			<frameworks eclipse="true" embed="${embed.System}" root="System"/>
+			<frameworks eclipse="true" embed="${embed.Network}" root="Network"/>
+
+			<lib dir="Libraries">
+				<include name="*.jar"/>
+			</lib>
+		</woapplication>
+	</target>
+	
+	<target depends="build.woapp" if="javaClient" name="javaclient">
+		<mkdir dir="${dest.dir}/${build.app.name}.woa/Contents/WebServerResources/Java"/>
+		<jar basedir="${classes.dir}" excludes="**/server/**/*.*, **/server/**/" jarfile="${dest.dir}/${build.app.name}.woa/Contents/WebServerResources/Java/${build.app.name}.jar"/>
+    </target>
+
+	<target depends="ssdd" if="servletDeployment" name="war">
+		<war destfile="${dest.dir}/${build.app.name}.war" webxml="${dest.dir}/${build.app.name}/WEB-INF/web.xml">
+			<fileset dir="${dest.dir}/${build.app.name}">
+				<include name="**"/>
+			</fileset>
+		</war>
+	</target>
+
+	<!-- To use this target
+    	1) create the LICENSE in your project directory
+    	2) add JavaWOJSPServlet in your WOFrameworks build path
+    	3) set servlet deployment to true in WOLips Properties
+    -->
+	<target depends="build.woapp" if="servletDeployment" name="ssdd">
+		<mkdir dir="${dest.dir}/${build.app.name}/WEB-INF/classes"/>
+		<mkdir dir="${dest.dir}/${build.app.name}/WEB-INF/tlds"/>
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/">
+			<fileset dir="${dest.dir}/${build.app.name}.woa/Contents/">
+				<include name="web.xml"/>
+			</fileset>
+		</copy>
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/">
+			<fileset dir="..">
+				<include name="LICENSE"/>
+			</fileset>
+		</copy>
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/">
+			<fileset dir="${dest.dir}">
+				<include name="${build.app.name}.woa/**"/>
+			</fileset>
+		</copy>
+		<!-- copy the frameworks to the WEBINFROOT/Library directory -->
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/">
+			<fileset dir="${dest.dir}/${build.app.name}.woa/Contents">
+				<include name="Library/**"/>
+			</fileset>
+		</copy>
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/">
+			<fileset dir="${dest.dir}/${build.app.name}.woa">
+				<include name="Resources/**"/>
+			</fileset>
+		</copy>
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/lib/">
+			<fileset dir="${dest.dir}/${build.app.name}/WEB-INF">
+				<include name="**/Resources/**/*.jar"/>
+			</fileset>
+			<mapper type="flatten"/>
+		</copy>
+
+		<!--  Get the necessary Frameworks from the webobjects system root instead of the project wrapper -->
+		<copy file="${wo.system.frameworks}/JavaWOJSPServlet.framework/WebServerResources/Java/JavaWOJSPServlet_client.jar" todir="${dest.dir}/${build.app.name}/WEB-INF/lib"/>
+
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/tlds">
+			<fileset dir="${wo.system.frameworks}/JavaWOJSPServlet.framework/Resources/">
+				<include name="WOtaglib_1_0.tld"/>
+			</fileset>
+		</copy>
+
+		<!-- the WebObject Extensions -->
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/lib">
+			<fileset dir="${wo.extensions}">
+				<include name="*.jar"/>
+				<exclude name="servlet.jar"/>
+			</fileset>
+			<mapper type="flatten"/>
+		</copy>
+		
+		<!-- the Java Client Client-Side Classes 	  -->
+		<copy todir="${dest.dir}/${build.app.name}/WEB-INF/${build.app.name}.woa/Contents/WebServerResources/Java">
+			<fileset dir="${wo.local.frameworks}"> 
+				<include name="**/WebServerResources/Java/*.jar"/> 
+			</fileset> 
+			<mapper type="flatten"/>
+		</copy>
+		
+		<!-- fix the Macos*ClassPath.txt files  -->
+		<replaceregexp byline="true" file="${dest.dir}/${build.app.name}/WEB-INF/${build.app.name}.woa/Contents/MacOS/MacOSClassPath.txt" match="APPROOT/Resources/Java/${build.app.name.lowercase}.jar" replace="APPROOT/${build.app.name}.woa/Contents/Resources/Java/${build.app.name.lowercase}.jar"/>
+		<replaceregexp byline="true" file="${dest.dir}/${build.app.name}/WEB-INF/${build.app.name}.woa/Contents/MacOS/MacOSXServerClassPath.txt" match="APPROOT/Resources/Java/${build.app.name.lowercase}.jar" replace="APPROOT/${build.app.name}.woa/Contents/Resources/Java/${build.app.name.lowercase}.jar"/>
+
+		<!-- fix the web.xml file:  the app itself needs build.app.name/Contents -->
+		<replaceregexp byline="true" file="${dest.dir}/${build.app.name}/WEB-INF/web.xml" match="WEBINFROOT/Resources/Java/${build.app.name.lowercase}.jar" replace="WEBINFROOT/${build.app.name}.woa/Contents/Resources/Java/${build.app.name.lowercase}.jar"/>
+
+		<!-- fix the web.xml file to remove the extra Frameworks/ directory level for the frameworks -->
+		<replaceregexp byline="true" file="${dest.dir}/${build.app.name}/WEB-INF/web.xml" match="WEBINFROOT/Frameworks//" replace="WEBINFROOT/"/>
+	</target>
+
+	<target depends="init.properties" name="compile">
+		<taskdef classname="org.objectstyle.woproject.ant.WOCompile" name="wocompile"/>
+
+		<mkdir dir="bin"/>
+		<wocompile destdir="bin" srcdir="Sources">
+			<frameworks eclipse="true" embed="false" root="ProjectLocal"/>
+			<frameworks eclipse="true" embed="false" root="External"/>
+			<frameworks eclipse="true" embed="false" root="Local"/>
+			<frameworks eclipse="true" embed="false" root="User"/>
+			<frameworks eclipse="true" embed="false" root="System"/>
+			<frameworks eclipse="true" embed="false" root="Network"/>
+			<classpath>
+				<fileset dir="Libraries">
+					<include name="*.jar"/>
+				</fileset>
+				<fileset dir="${wo.extensions}">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</wocompile>
+	</target>
+</project>

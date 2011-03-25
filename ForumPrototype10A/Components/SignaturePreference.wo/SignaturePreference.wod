@@ -1,0 +1,9 @@
+Form1: WOForm {
+	action = session.defaultEditingContext.saveChanges;
+}
+
+Text1: WOText {
+	value = session.user.signature;
+	cols = 30;
+	rows = 5;
+}

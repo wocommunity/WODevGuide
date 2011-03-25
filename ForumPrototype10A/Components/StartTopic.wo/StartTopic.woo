@@ -1,0 +1,32 @@
+{
+    "WebObjects Release" = "WebObjects 5.0"; 
+    encoding = NSMacOSRomanStringEncoding; 
+    variables = {
+        postsDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODetailDataSource; 
+                detailKey = posts; 
+                masterClassDescription = Topic; 
+            }; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 0; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = (); 
+        }; 
+        topicsDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODetailDataSource; 
+                detailKey = topics; 
+                masterClassDescription = Forum; 
+            }; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 0; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = (); 
+        }; 
+    }; 
+}

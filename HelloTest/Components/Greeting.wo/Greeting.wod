@@ -1,0 +1,7 @@
+Hyperlink1: WOHyperlink {
+	pageName = "Main";
+}
+
+String1: WOString {
+	value = application.username;
+}

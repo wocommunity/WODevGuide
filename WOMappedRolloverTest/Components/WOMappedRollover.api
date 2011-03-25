@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WOMappedRollover" wocomponentcontent="false">
+
+		<binding name="imageName"/>
+		<binding name="imageFile" defaults="Resources"/>
+		<binding name="imageMap"/>
+
+		<validation message="&apos;imageName&apos; is a required binding">
+			<unbound name="imageName"/>
+		</validation>
+
+		<validation message="&apos;imageFile&apos; is a required binding">
+			<unbound name="imageFile"/>
+		</validation>
+
+		<validation message="&apos;imageMap&apos; is a required binding">
+			<unbound name="imageMap"/>
+		</validation>
+	</wo>
+</wodefinitions>

@@ -1,0 +1,6 @@
+TextField: WOXMLNode {
+	elementName = "input";
+	name = name;
+	type = "text";
+	value = ^value;
+}

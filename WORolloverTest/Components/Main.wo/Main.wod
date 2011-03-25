@@ -1,0 +1,5 @@
+Rollover: WORollover {
+	highlightedImage = "searchH.gif";
+	imageName = "home";
+	unhighlightedImage = "search.gif";
+}

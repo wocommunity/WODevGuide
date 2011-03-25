@@ -1,0 +1,32 @@
+{
+    Search = {
+        class = EOFetchSpecification; 
+        entityName = Post; 
+        fetchLimit = 0; 
+        isDeep = YES; 
+        qualifier = {
+            class = EOAndQualifier; 
+            qualifiers = (
+                {
+                    class = EOKeyValueQualifier; 
+                    key = message; 
+                    selectorName = "isLike:"; 
+                    value = {_key = message; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = topic.name; 
+                    selectorName = "isLike:"; 
+                    value = {_key = topic; class = EOQualifierVariable; }; 
+                }, 
+                {
+                    class = EOKeyValueQualifier; 
+                    key = user.name; 
+                    selectorName = "isLike:"; 
+                    value = {_key = username; class = EOQualifierVariable; }; 
+                }
+            ); 
+        }; 
+        rawRowKeyPaths = (message, postID, timestamp, topicID, userID, topic.name, user.name); 
+    }; 
+}

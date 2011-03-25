@@ -1,0 +1,23 @@
+{
+    "WebObjects Release" = "WebObjects 3.5"; 
+    variables = {
+        cardDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODatabaseDataSource; 
+                editingContext = session.defaultEditingContext; 
+                fetchSpecification = {
+                    class = EOFetchSpecification; 
+                    entityName = Card; 
+                    fetchLimit = 0; 
+                    isDeep = YES; 
+                }; 
+            }; 
+            fetchesOnLoad = YES; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 0; 
+            selectsFirstObjectAfterFetch = YES; 
+        }; 
+    }; 
+}

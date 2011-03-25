@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- 
+  -- DisplayVideoPage.html
+  -- [ThinkMovies Project]
+  --
+  -- Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+  -- All rights reserved.
+  --
+  -- You may freely copy, distribute and reuse the code in this example.
+  -- Apple disclaims any warranty of any kind, expressed or implied,
+  -- as to its fitness for any particular use.
+  -->
+<html>
+  <head>
+    <meta name = "generator" content = "WebObjects 5.0" />
+    <title>Think Movies : Details for <webobject name = "MovieTitle" /></title>
+  </head>
+  <body bgcolor = "#FFFFFF">
+    <center>
+      <webobject name = "Toolbar" />
+      <br />
+      <p>
+        <webobject name = "RentalLink">Rent this movie</webobject>
+      </p>
+      <table border = "0" width = "100%">
+        <tr>
+          <td align = "LEFT" valign = "TOP">
+            <font size = "+2">
+              <webobject name = "PreviousMovieLink">Previous</webobject>
+            </font>
+          </td>
+          <td align = "CENTER">
+            <table border = "0" cellpadding = "0" cellspacing = "0" bgcolor = "000000">
+              <tr>
+                <td>
+                  <!-- Border Table -->
+                  <table bgcolor = "CFCFFF" cellspacing = "1" cellpadding = "5" border = "0">
+                    <tr>
+                      <td align = "CENTER" colspan = "3" bgcolor = "CFCFFF">
+                        <font size = "+1" color = "00004F">
+                          <b> <webobject name = "MovieTitle" /> </b>
+                        </font>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align = "RIGHT" bgcolor = "AFAFFF">
+                        Viewer 
+                        <webobject name = "Hyperlink4">Voting</webobject>:</td>
+                      <td bgcolor = "CFCFFF">
+                        <b><webobject name = "VotingAverage" /></b>  
+                        (avg. of
+                        <webobject name = "NumberOfVotes" />
+                        votes)</td>
+                      <td bgcolor = "CFCFFF">
+                        <webobject name = "Hyperlink2">Reviews</webobject>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align = "RIGHT" bgcolor = "AFAFFF">Studio:</td>
+                      <td colspan = "2" bgcolor = "CFCFFF"> <webobject name = "MovieStudio" />&amp;nbsp</td>
+                    </tr>
+                    <tr>
+                      <td align = "RIGHT" bgcolor = "AFAFFF">Date Released:</td>
+                      <td colspan = "2" bgcolor = "CFCFFF"> <webobject name = "MovieReleaseDate" />&amp;nbsp</td>
+                    </tr>
+                    <tr>
+                      <td align = "RIGHT" bgcolor = "AFAFFF">Category:</td>
+                      <td colspan = "2" bgcolor = "CFCFFF"> <webobject name = "MovieCategory" />&amp;nbsp</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor = "AFAFFF" align = "RIGHT">Director:</td>
+                      <td bgcolor = "CFCFFF" colspan = "2">
+                        <webobject name = "MovieDirectorRepetition">
+                          <webobject name = "DirectorFirstName" />
+                          <webobject name = "DirectorLastName" />
+                          <br />
+                        </webobject>&amp;nbsp</td>
+                    </tr>
+                    <tr>
+                      <webobject name = "RolesRowspan">Roles:</webobject>
+                      <td bgcolor = "AFAFFF">Actor</td>
+                      <td bgcolor = "AFAFFF">Role played</td>
+                    </tr>
+                    <webobject name = "MovieRoles">
+                      <tr>
+                        <td align = "RIGHT">
+                          <webobject name = "ActorFirstName" />
+                          <webobject name = "ActorLastName" />
+                          <webobject name = "ActorImage" />
+                        </td>
+                        <td> <webobject name = "Role" /> </td>
+                      </tr>
+                    </webobject>
+                    <tr>
+                      <td bgcolor = "AFAFFF" align = "RIGHT">Plot Summary:</td>
+                      <td bgcolor = "CFCFFF" colspan = "2"> <webobject name = "String1" />&amp;nbsp</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Border Table -->
+          </td>
+          <td align = "RIGHT" valign = "TOP">
+            <font size = "+2">
+              <webobject name = "NextMovieLink">Next</webobject>
+            </font>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

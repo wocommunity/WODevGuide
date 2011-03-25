@@ -1,0 +1,35 @@
+<WEBOBJECT NAME=ForumTemplate><table cellspacing=0 cellpadding=0 border=0 width=100%>
+		<tr>
+			<th align=LEFT><font size=2><webobject name=HomeLink>Home</webobject>
+				&gt;
+				<webobject name=SearchLink>Search</webobject>
+				&gt; Results</font></th>
+		</tr>
+	</table>
+	<p></p>
+	<table cellspacing=1 cellpadding=4 border=0 width=100% bgcolor=#aaaaaa>
+		<tr bgcolor=e0e0e0>
+			<td colspan=2><webobject name=BatchNavigationBar1></webobject></td>
+		</tr>
+		<tr bgcolor=#e9e9e9>
+			<th align=LEFT colspan=2>Search Results</th>
+		</tr>
+		<WEBOBJECT NAME=ResultsConditional><tr>
+			<td bgcolor=#ffffff>
+				<table width=100% cellpadding=2>
+					<webobject name=RowRepetition>
+						<tr>
+							<td><webobject name=TopicPostsLink></webobject></td>
+							<td align=RIGHT><font size=2>by&nbsp;<webobject name=UserName2></webobject></font>&nbsp;on&nbsp;<font size=2><webobject name=PostTime2></webobject></font></td>
+						</tr>
+						<tr>
+							<td colspan=3><i><webobject name=PostMessage2></webobject><br>
+								</i>
+								<hr noshade size=1>
+							</td>
+						</tr>
+					</webobject>
+				</table>
+			</td>
+		</tr></WEBOBJECT>
+	</table></WEBOBJECT>

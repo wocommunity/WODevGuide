@@ -1,0 +1,6 @@
+WXImage: WXImage {
+	filename = "hello_world_title.gif";
+	framework = "app";
+	mimeType = "image/gif";
+	src = "/PoweredByMacOSXLarge.gif";
+}

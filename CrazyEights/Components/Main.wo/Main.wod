@@ -1,0 +1,44 @@
+CardImage: WOImage {
+	filename = aCard.filename;
+	framework = "app";
+	height = 145;
+	width = 99;
+	border = "0";
+}
+
+DrawCardImage: WOImage {
+	framework = "app";
+	height = 145;
+	width = 99;
+	filename = discard.filename;
+}
+
+DrawCardImage2: WOImage {
+	filename = "cardimage.jpg";
+	framework = "app";
+	height = 145;
+	width = 99;
+	border = "0";
+}
+
+DrawLink: WOHyperlink {
+	action = draw;
+}
+
+DrawPileConditional: WOConditional {
+	condition = deck.count;
+}
+
+NewGameLink: WOHyperlink {
+	pageName = "Main";
+}
+
+PlayLink: WOHyperlink {
+	action = play;
+}
+
+Table: WOTable { 	
+	list = myHand;
+	maxColumns = 7;
+	item = aCard;
+}

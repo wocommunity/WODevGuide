@@ -1,0 +1,22 @@
+Date: WOString {
+	value = post.timestamp;
+	dateformat = "%X %x";
+}
+
+Message: WOString {
+	escapeHTML = false;
+	value = message;
+}
+
+PostRepetition: WORepetition {
+	item = post;
+	list = topic.posts;
+}
+
+Topic: WOString {
+	value = topic.name;
+}
+
+Username: WOString {
+	value = post.user.name;
+}

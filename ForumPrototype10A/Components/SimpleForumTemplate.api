@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="SimpleForumTemplate" wocomponentcontent="true">
+
+		<binding name="onLoad"/>
+		<binding name="title"/>
+
+		<validation message="&apos;title&apos; is a required binding">
+			<unbound name="title"/>
+		</validation>
+	</wo>
+</wodefinitions>

@@ -1,0 +1,63 @@
+/*
+ * DisplayReviewsPage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+Conditional1: WOConditional {
+	condition = isSelectedReview;
+}
+
+Conditional2: WOConditional {
+	condition = isSelectedReview;
+}
+
+Hyperlink1: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "DisplayMovie";
+}
+
+Hyperlink2: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "AddReview";
+}
+
+Hyperlink3: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "Voting";
+}
+
+ObjectIdentifier: WOString {
+	value = rev.reviewer;
+}
+
+SelectObjectLink: WOHyperlink {
+	?movieID = movieID;
+	?reviewID = reviewID;
+	directActionName = "DisplayReviews";
+}
+
+SelectionList: WORepetition {
+	item = rev;
+	list = movie.reviews;
+}
+
+String1: WOString {
+	value = movie.title;
+}
+
+String3: WOString {
+	value = review.reviewer;
+}
+
+String4: WOString {
+	value = review.review;
+}
+
+Toolbar: ToolbarComponent { }

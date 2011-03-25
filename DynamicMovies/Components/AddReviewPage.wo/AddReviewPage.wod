@@ -1,0 +1,49 @@
+/*
+ * AddReviewPage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+Form1: WOForm {
+	?movieID = movieID;
+	directActionName = "ProcessAddReview";
+	method = "post";
+}
+
+Hyperlink1: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "DisplayMovie";
+}
+
+Hyperlink2: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "Voting";
+}
+
+String1: WOString {
+	value = movie.title;
+}
+
+SubmitButton1: WOSubmitButton {
+	value = "Submit Review";
+}
+
+Text1: WOText {
+	cols = 60;
+	name = "review";
+	rows = 15;
+	value = review;
+}
+
+TextField1: WOTextField {
+	name = "reviewer";
+	value = reviewer;
+}
+
+Toolbar: ToolbarComponent { }

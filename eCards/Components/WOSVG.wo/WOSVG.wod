@@ -1,0 +1,7 @@
+EmbeddedObject1: WOGenericElement {
+	src = src;
+	elementName = "embed";
+	width = ^width;
+	type = "image/svg";
+	height = ^height;
+}

@@ -1,0 +1,7 @@
+CollapsibleList1: WOCollapsibleList {
+	label = "Section.1";
+}
+
+WOCollapsibleList: WOCollapsibleList {
+	label = "Chapter.1";
+}

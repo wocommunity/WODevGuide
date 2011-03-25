@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+	<HEAD>
+		<meta name="generator" content="WebObjects 5.0">
+                <TITLE>Cards</TITLE>
+        </HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<!-- Title segment -->
+<CENTER>
+  <H2>All Cards</H2>
+</CENTER>
+<BR>
+
+<!-- Selection segment -->
+<CENTER>
+  Click a link to select that card.
+  <BR>
+  <WEBOBJECT name=SelectionList>
+    <WEBOBJECT name=SelectObjectLink>
+      <WEBOBJECT name=ObjectIdentifier></WEBOBJECT>
+    </WEBOBJECT>
+    <BR>
+  </WEBOBJECT>
+  <BR>
+</CENTER>
+<HR>
+
+<!-- Displayed objects segment -->
+<WEBOBJECT name=ModificationForm>
+  <TABLE BORDER=0>
+  <TR> <TD> filename: </TD> <TD> <WEBOBJECT name=filenameField></WEBOBJECT> </TD></TR>
+<TR> <TD> name: </TD> <TD> <WEBOBJECT name=nameField></WEBOBJECT> </TD></TR>
+<TR> <TD> rank: </TD> <TD> <WEBOBJECT name=rankField></WEBOBJECT> </TD></TR>
+<TR> <TD> suit: </TD> <TD> <WEBOBJECT name=suitField></WEBOBJECT> </TD></TR>
+<TR> <TD> value: </TD> <TD> <WEBOBJECT name=valueField></WEBOBJECT> </TD></TR>
+
+  </TABLE>
+  <CENTER>
+    <WEBOBJECT name=InsertActiveImage></WEBOBJECT>
+    <WEBOBJECT name=UpdateActiveImage></WEBOBJECT>
+    <WEBOBJECT name=DeleteActiveImage></WEBOBJECT>
+  </CENTER>
+</WEBOBJECT>
+<HR>
+
+</BODY>
+</HTML>

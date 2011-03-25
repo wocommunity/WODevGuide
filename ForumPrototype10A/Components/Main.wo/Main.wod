@@ -1,0 +1,69 @@
+Conditional1: WOConditional {
+	condition = hasSession;
+}
+
+Conditional2: WOConditional {
+	condition = hasSession;
+	negate = true;
+}
+
+ForumCount: WOString {
+	value = application.sharedEditingContext.objectsByEntityName.Forum.count;
+}
+
+ForumImage: WOImage {
+	filename = "orangepage.gif";
+	framework = "app";
+}
+
+ForumTemplate: ForumTemplate {
+	title = "Forums";
+	onLoad = onLoad;
+}
+
+Hyperlink1: WOHyperlink {
+	string = forum.name;
+	directActionName = "topics";
+	actionClass = "DirectAction";
+	?forumID = forumID;
+}
+
+LoginLink: WOHyperlink {
+	directActionName = "default";
+	actionClass = "LoginAction";
+	secure = false;
+}
+
+PreferencesLink: WOHyperlink {
+	pageName = "Preferences";
+}
+
+RegisterLink: WOHyperlink {
+	actionClass = "Register";
+	directActionName = "default";
+}
+
+Repetition1: WORepetition {
+	item = moderator;
+	list = forum.moderators;
+}
+
+RowRepetition: WORepetition { 	list = application.sharedEditingContext.objectsByEntityName.Forum;
+	item = forum;
+}
+
+SearchLink: WOHyperlink {
+	actionClass = "SearchAction";
+}
+
+String1: WOString {
+	value = forum.topicsCount;
+}
+
+String2: WOString {
+	value = forum.postsCount;
+}
+
+String3: WOString {
+	value = moderator.name;
+}

@@ -1,0 +1,59 @@
+CancelButton: WOSubmitButton {
+	action = cancel;
+	value = "Cancel";
+}
+
+CheckBox1: WOCheckBox {
+	checked = useSignature;
+}
+
+Conditional1: WOConditional {
+	condition = session.user.hasSignature;
+}
+
+FileUpload1: WOFileUpload {
+	data = post.attachment;
+	filePath = post.filePath;
+}
+
+ForumTemplate: ForumTemplate {
+	title = "Start New Topic";
+        onLoad = onLoad;
+}
+
+HomeLink2: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+ReplyButton: WOSubmitButton {
+	action = save;
+	value = "Submit";
+}
+
+ReplyForm: WOForm {
+	multipleSubmit = true;
+	enctype = "multipart/form-data";
+}
+
+String2: WOString {
+	value = topic.forum.name;
+}
+
+Text2: WOText {
+	value = post.message;
+	cols = 65;
+	rows = 5;
+}
+
+TopicLink: WOHyperlink {
+	?forumID = forumID;
+	actionClass = "DirectAction";
+	directActionName = "topics";
+	string = topic.forum.name;
+}
+
+TopicNameField: WOTextField {
+	value = topic.name;
+	size = 65;
+}

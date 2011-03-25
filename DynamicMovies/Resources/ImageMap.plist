@@ -1,0 +1,24 @@
+{
+    "name" = "splashmap";
+    "areas" = ({
+        "shape" = "rect";
+        "coords" = "221,151,289,188";
+        "directActionName" = "AddMovie";
+	"imageOnMouseOver" = "splash_addH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "30,94,245,173";
+        "directActionName" = "Search";
+	"imageOnMouseOver" = "splash_searchH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "176,66,283,111";
+        "directActionName" = "MasterIndex";
+	"imageOnMouseOver" = "splash_indexH.gif";
+    }, {
+        "shape" = "rect";
+        "coords" = "234,103,295,142";
+        "directActionName" = "Help";
+	"imageOnMouseOver" = "splash_helpH.gif";
+    });
+}

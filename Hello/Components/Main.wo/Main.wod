@@ -1,0 +1,18 @@
+Body1: WOBody {
+	bgcolor = "#FFFFFF";
+	filename = "aqua_bg.jpg";
+	framework = "WOExamplesHarness";
+}
+
+Form1: WOForm {
+	action = submit;
+}
+
+Image1: WOImage {
+	filename = "hello_world_title.gif";
+	framework = "app";
+}
+
+TextField1: WOTextField {
+	value = session.username;
+}

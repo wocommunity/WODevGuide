@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements(s) to &apos;Resources&apos;&#x0A;- Original project: &apos;Forum&apos;&#x0A;- Destination element: &apos;Resources&apos;&#x0A;- Original elements:&#x0A;     Forum.eomodeld&#x0A;     Users.eomodeld" description="Copy folders" element1="Resources/Forum.eomodeld" element2="Resources/Users.eomodeld" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1262058104630" target="/ForumPrototype10A/Resources" units="0" version="1.0"/>
+</session>

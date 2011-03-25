@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WOToggle" wocomponentcontent="false">
+
+		<binding name="condition" defaults="Boolean"/>
+
+		<validation message="&apos;condition&apos; must be bound to a settable value">
+			<unsettable name="condition"/>
+		</validation>
+	</wo>
+</wodefinitions>

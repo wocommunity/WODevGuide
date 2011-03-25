@@ -1,0 +1,52 @@
+/*
+ * DisplaySetPage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+FromString: WOString {
+	value = displayGroup.indexOfFirstDisplayedObject;
+}
+
+ListRepetition: WORepetition {
+	item = aMovie;
+	list = displayGroup.displayedObjects;
+}
+
+MovieTitle: WOString {
+	value = aMovie.title;
+}
+
+MovieTitleLink: WOHyperlink {
+	?movieID = aMovie.movieID;
+	directActionName = "DisplayMovie";
+	queryDictionary = queryDict;
+}
+
+NextBatch: WOHyperlink {
+	?batchIndex = batchIndexPlusOne;
+	directActionName = "Results";
+	queryDictionary = queryDict;
+}
+
+PreviousBatch: WOHyperlink {
+	?batchIndex = batchIndexMinusOne;
+	directActionName = "Results";
+	queryDictionary = queryDict;
+}
+
+ToString: WOString {
+	value = displayGroup.indexOfLastDisplayedObject;
+}
+
+Toolbar: ToolbarComponent { }
+
+TotalItemsFound: WOString {
+	value = displayGroup.allObjects.count;
+}

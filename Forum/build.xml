@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="Forum">
+	<target depends="init.build,build.woframework,javaclient,package" name="build"/>
+
+	<target depends="init.install,build.woframework,javaclient" name="install"/>
+
+	<target depends="init.properties" name="clean">
+		<delete dir="bin"/>
+		<delete dir="dist"/>
+	</target>
+
+	<!-- property determination  -->
+	<target name="init.properties">
+		<property file="build.properties"/>
+
+		<property name="wolips.properties" value="${user.home}${file.separator}Library${file.separator}Application Support${file.separator}WOLips${file.separator}wolips.properties"/>
+		<property file="${wolips.properties}"/>
+		<condition property="wo.properties.check.failed">
+			<not>
+				<and>
+					<isset property="wo.system.frameworks"/>
+					<isset property="wo.local.frameworks"/>
+				</and>
+			</not>
+		</condition>
+		<fail if="wo.properties.check.failed" message="The properties 'wo.system.frameworks' and 'wo.local.frameworks' must be set. Check that your ${wolips.properties} is correct."/>
+
+		<property name="wo.install.root" value="${wo.local.frameworks}"/>
+	</target>
+
+	<!-- basic initializations  -->
+	<target depends="init.properties" name="init.install">
+		<tstamp/>
+		<property name="dest.dir" value="${wo.install.root}"/>
+	</target>
+
+	<target depends="init.properties" name="init.build">
+		<tstamp/>
+		<property name="dest.dir" value="dist"/>
+	</target>
+
+  <target name="package">
+    <tar compression="gzip" destfile="${dest.dir}/${project.name}.tar.gz" longfile="gnu">
+      <tarfileset dir="${dest.dir}">
+        <include name="${project.name}.framework/**"/>
+      </tarfileset>
+    </tar>
+	</target>
+
+	<!-- woproject tasks -->
+	<target depends="compile" name="build.woframework">
+		<taskdef classname="org.objectstyle.woproject.ant.WOFramework" name="woframework"/>
+
+		<woframework cfbundleID="${cfBundleID}" cfbundleshortversion="${cfBundleShortVersion}" cfbundleversion="${cfBundleVersion}" customInfoPListContent="${customInfoPListContent}" destDir="${dest.dir}" eoAdaptorClassName="${eoAdaptorClassName}" javaVersion="${javaVersion}" name="${project.name}" principalClass="${principalClass}">
+			<classes dir="${classes.dir}">
+				<includesfile name="woproject/classes.include.patternset"/>
+				<excludesfile name="woproject/classes.exclude.patternset"/>
+				<exclude if="javaClient" name="**/client/**/*.*"/>
+			</classes>
+
+			<wsresources dir=".">
+				<includesfile name="woproject/wsresources.include.patternset"/>
+				<excludesfile name="woproject/wsresources.exclude.patternset"/>
+			</wsresources>
+
+			<resources dir=".">
+				<includesfile name="woproject/resources.include.patternset"/>
+				<excludesfile name="woproject/resources.exclude.patternset"/>
+				<exclude if="javaClient" name="**/client/**/*.*"/>
+			</resources>
+
+			<lib dir="Libraries">
+				<include name="*.jar"/>
+			</lib>
+		</woframework>
+	</target>
+	
+	<target depends="build.woframework" if="javaClient" name="javaclient">
+		<mkdir dir="${dest.dir}/${project.name}.framework/WebServerResources/Java"/>
+		<jar basedir="${classes.dir}" excludes="**/server/**/*.*, **/server/**/" jarfile="${dest.dir}/${project.name}.framework/WebServerResources/Java/${project.name}.jar"/>
+	</target>
+	
+	<target depends="init.build" name="compile">
+		<taskdef classname="org.objectstyle.woproject.ant.WOCompile" name="wocompile"/>
+
+		<mkdir dir="bin"/>
+		<wocompile destdir="bin" srcdir="Sources">
+			<frameworks eclipse="true" embed="false" root="ProjectLocal"/>
+			<frameworks eclipse="true" embed="false" root="External"/>
+			<frameworks eclipse="true" embed="false" root="Local"/>
+			<frameworks eclipse="true" embed="false" root="User"/>
+			<frameworks eclipse="true" embed="false" root="System"/>
+			<frameworks eclipse="true" embed="false" root="Network"/>
+			<classpath>
+				<fileset dir="Libraries">
+					<include name="*.jar"/>
+				</fileset>
+				<fileset dir="${wo.extensions}">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</wocompile>
+	</target>
+</project>

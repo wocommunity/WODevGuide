@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- 
+  -- SearchPage.html
+  -- [ThinkMovies Project]
+  --
+  -- Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+  -- All rights reserved.
+  --
+  -- You may freely copy, distribute and reuse the code in this example.
+  -- Apple disclaims any warranty of any kind, expressed or implied,
+  -- as to its fitness for any particular use.
+  -->
+<html>
+  <head>
+    <meta name = "generator" content = "WebObjects 5.0" />
+    <title>Think Movies : Search</title>
+  </head>
+  <body bgcolor = "#FFFFFF">
+    <center>
+      <webobject name = "Toolbar" />
+      <br />
+      <br />
+      <H3>Search for Movies</H3>
+    </center>
+    <br />
+    <webobject name = "SearchForm">
+      <center>
+        <table border = "0" cellpadding = "0" cellspacing = "0" bgcolor = "#000000">
+          <!-- Border Table -->
+          <webobject name = "Conditional1">
+            <tr valign = "MIDDLE">
+              <td>
+                <table align = "center" cellpadding = "10" border = "0" width = "100%" cellspacing = "1" bgcolor = "#CFCFFF">
+                  <tr valign = "top">
+                    <td align = "center">
+                      <webobject name = "ErrorTable">
+                        <tr>
+                          <td>
+                            <font color = "FFFFFF">
+                              <b><webobject name = "ErrorMessage" /></b>
+                            </font>
+                          </td>
+                        </tr>
+                      </webobject>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </webobject>
+          <tr>
+            <td>
+              <table align = "center" border = "0" cellpadding = "10" cellspacing = "1" bgcolor = "#CFCFFF">
+                <tr>
+                  <td bgcolor = "#AFAFFF" align = "RIGHT">Title</td>
+                  <td bgcolor = "#CFCFFF" algin = "LEFT">
+                    <webobject name = "Operator3" />
+                    <webobject name = "TitleTextField" />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor = "#AFAFFF" align = "RIGHT">Category</td>
+                  <td bgcolor = "#CFCFFF" align = "LEFT">
+                    <webobject name = "Operator2" />
+                    <webobject name = "CategoryTextField" />
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor = "#AFAFFF" align = "RIGHT">Date released</td>
+                  <td bgcolor = "#CFCFFF" align = "LEFT">
+                    <webobject name = "Operator" />
+                    <webobject name = "DateQual" />
+                    <b>*</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td bgcolor = "#CFCFFF" colspan = "2" align = "center">
+                    <input type = "RESET" value = "Reset" />
+                    <input type = "submit" value = "Submit Query" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- Border Table -->
+        * 
+        <font size = "-1">Enter dates in the following format: MM/DD/YYYY</font>
+      </center>
+    </webobject>
+  </body>
+</html>

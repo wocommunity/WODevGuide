@@ -1,0 +1,115 @@
+/*
+ * DisplayVideoPage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+ActorFirstName: WOString {
+	value = aRole.talent.firstName;
+}
+
+ActorImage: WOImage {
+	align = "ABSMIDDLE";
+	data = actorImageData;
+	key = talentPhotoCachingKey;
+	mimeType = "image/gif";
+}
+
+ActorLastName: WOString {
+	value = aRole.talent.lastName;
+}
+
+DirectorFirstName: WOString {
+	value = aDirector.firstName;
+}
+
+DirectorLastName: WOString {
+	value = aDirector.lastName;
+}
+
+Hyperlink2: WOHyperlink {
+	?movieID = movieID;
+	?reviewID = "0";
+	directActionName = "DisplayReviews";
+}
+
+Hyperlink4: WOHyperlink {
+	?movieID = movieID;
+	directActionName = "Voting";
+}
+
+MovieCategory: WOString {
+	value = movie.category;
+}
+
+MovieDirectorRepetition: WORepetition {
+	item = aDirector;
+	list = movie.directors;
+}
+
+MovieReleaseDate: WOString {
+	dateformat = "%B %d, %Y";
+	value = movie.dateReleased;
+}
+
+MovieRoles: WORepetition {
+	item = aRole;
+	list = movie.roles;
+}
+
+MovieStudio: WOString {
+	value = movie.studio.name;
+}
+
+MovieTitle: WOString {
+	value = movie.title;
+}
+
+NextMovieLink: WOHyperlink {
+	?movieID = nextMovieID;
+	directActionName = "DisplayMovie";
+	queryDictionary = queryDict;
+}
+
+NumberOfVotes: WOString {
+	value = movie.voting.numberOfVotes;
+}
+
+PreviousMovieLink: WOHyperlink {
+	?movieID = previousMovieID;
+	directActionName = "DisplayMovie";
+	queryDictionary = queryDict;
+}
+
+RentalLink: WOHyperlink {
+	?movieID = movieID;
+	href = rentalStoreURL;
+}
+
+Role: WOString {
+	value = aRole.roleName;
+}
+
+RolesRowspan: WOGenericContainer {
+	ALIGN = "RIGHT";
+	BGCOLOR = "AFAFFF";
+	ROWSPAN = computedRolesRowspan;
+	elementName = "TD";
+}
+
+String1: WOString {
+	value = movie.plotSummary.summary;
+}
+
+Toolbar: ToolbarComponent { }
+
+VotingAverage: WOString {
+	numberformat = "0.0";
+	value = movie.voting.runningAverage;
+}

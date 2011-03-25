@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WORollover" wocomponentcontent="false">
+
+		<binding name="highlightedImage" defaults="Resources"/>
+		<binding name="imageName"/>
+		<binding name="unhighlightedImage" defaults="Resources"/>
+		<binding name="directActionName" defaults="Direct Actions"/>
+
+		<validation message="&apos;highlightedImage&apos; is a required binding">
+			<unbound name="highlightedImage"/>
+		</validation>
+
+		<validation message="&apos;imageName&apos; is a required binding">
+			<unbound name="imageName"/>
+		</validation>
+
+		<validation message="&apos;unhighlightedImage&apos; is a required binding">
+			<unbound name="unhighlightedImage"/>
+		</validation>
+
+		<validation message="&apos;directActionName&apos; is a required binding">
+			<unbound name="directActionName"/>
+		</validation>
+	</wo>
+</wodefinitions>

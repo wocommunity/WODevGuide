@@ -1,0 +1,73 @@
+/*
+ * AddMoviePage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+CategoryTextField: WOTextField {
+	name = "category";
+	size = "15";
+	value = aCategory;
+}
+
+Conditional1: WOConditional {
+	condition = didValidationFail;
+}
+
+Conditional2: WOConditional {
+	condition = didValidationFail;
+	negate = true;
+}
+
+DateReleasedTextField: WOTextField {
+	name = "dateReleased";
+	size = "13";
+	value = aDateReleased;
+}
+
+ErrorMessage: WOString {
+	escapeHTML = "NO";
+	value = validationMessage;
+}
+
+ErrorTable: WOGenericContainer {
+	bgColor = "FF0000";
+	border = 1;
+	cellpadding = 2;
+	elementName = "table";
+}
+
+NewMovieForm: WOForm {
+	directActionName = "ProcessMovie";
+}
+
+ResetButton1: WOResetButton {}
+
+RevenueTextField: WOTextField {
+	name = "revenue";
+	size = "15";
+	value = aRevenue;
+}
+
+StudioPopUp: WOPopUpButton {
+	displayString = aStudio.name;
+	item = aStudio;
+	list = aStudioList;
+	name = "studio";
+	value = aStudio.studioID;
+    selection = aStudio;
+}
+
+TitleTextField: WOTextField {
+	name = "title";
+	size = "40";
+	value = aTitle;
+}
+
+Toolbar: ToolbarComponent { }

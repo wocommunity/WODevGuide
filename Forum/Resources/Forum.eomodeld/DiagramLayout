@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>Layouts</key>
+	<dict>
+		<key>Default</key>
+		<dict>
+			<key>EntityOption</key>
+			<string>All</string>
+			<key>RelationshipOption</key>
+			<string>None</string>
+			<key>ViewPositions</key>
+			<dict>
+				<key>Forum</key>
+				<array>
+					<string>-145.000000</string>
+					<string>611.000000</string>
+					<string>176.000000</string>
+					<string>114.000000</string>
+				</array>
+				<key>ForumModerator</key>
+				<array>
+					<string>84.000000</string>
+					<string>503.000000</string>
+					<string>122.000000</string>
+					<string>96.000000</string>
+				</array>
+				<key>Moderator</key>
+				<array>
+					<string>257.000000</string>
+					<string>485.000000</string>
+					<string>176.000000</string>
+					<string>186.000000</string>
+				</array>
+			</dict>
+			<key>orthoLines</key>
+			<string>Y</string>
+		</dict>
+	</dict>
+	<key>Version</key>
+	<string>1</string>
+</dict>
+</plist>

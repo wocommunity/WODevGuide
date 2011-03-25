@@ -1,0 +1,75 @@
+/*
+ * SearchPage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+CategoryTextField: WOTextField {
+	name = "category";
+	size = 30;
+	value = queryDict.category;
+}
+
+Conditional1: WOConditional {
+	condition = didQueryFail;
+}
+
+ErrorMessage: WOString {
+	escapeHTML = "NO";
+	value = "No movies matched this query.";
+}
+
+ErrorTable: WOGenericContainer {
+	bgColor = "FF0000";
+	border = 1;
+	cellpadding = 2;
+	elementName = "table";
+}
+
+SearchForm: WOForm {
+	directActionName = "Results";
+}
+
+TitleTextField: WOTextField {
+	name = "title";
+	size = 30;
+	value = queryDict.title;
+}
+
+Toolbar: ToolbarComponent { }
+
+DateQual: WOTextField {
+	name = "dateReleased";
+	size = 15;
+	value = queryDict.date;
+}
+
+Operator: WOPopUpButton {
+	list = dateOperatorList;
+	value = queryDict.dateOperator;
+	item = queryDict.dateOperator;
+    selectedValue = queryDict.dateOperator;
+	name = "dateOperator";
+}
+
+Operator2: WOPopUpButton {
+	list = textOperatorList;
+	value = queryDict.categoryOperator;
+	item = queryDict.categoryOperator;
+    selectedValue = queryDict.categoryOperator;
+	name = "categoryOperator";
+}
+
+Operator3: WOPopUpButton {
+	list = textOperatorList;
+	value = queryDict.titleOperator;
+	item = queryDict.titleOperator;
+    selectedValue = queryDict.titleOperator;
+	name = "titleOperator";
+}

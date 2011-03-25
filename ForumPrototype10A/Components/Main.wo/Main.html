@@ -1,0 +1,38 @@
+<WEBOBJECT NAME=ForumTemplate><table CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=100%>
+			<tr>
+				<th align=LEFT><font size=2>Home</font></th>
+				<webobject name=Conditional2>
+				<th align=RIGHT><FONT SIZE=2><WEBOBJECT NAME=SearchLink>Search</WEBOBJECT></FONT>&nbsp;<font size=2><webobject name=RegisterLink>Register</webobject>&nbsp;<webobject name=LoginLink>Login</webobject></font></th>
+				</webobject>
+				<webobject name=Conditional1>
+					<th ALIGN=RIGHT><FONT SIZE=2><WEBOBJECT NAME=SearchLink>Search</WEBOBJECT></FONT>&nbsp;<font size=2><webobject name=PreferencesLink>Preferences</webobject></font></th>
+				</webobject>
+			</tr>
+		</table>
+		<p></p>
+		<table cellspacing=1 cellpadding=4 border=0 width=100% bgcolor=#aaaaaa>
+			<tr bgcolor=#ffffff>
+				<td bgcolor="e0e0e0" colspan=4>
+					<table cellspacing=0 width=100% cellpadding=4>
+						<tr>
+							<td><strong><webobject name=ForumCount></webobject>
+								Forum(s)</strong></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr bgcolor=#e9e9e9>
+				<th align=LEFT>Forum</th>
+				<th align=CENTER>#Topics</th>
+				<th align=CENTER>#Posts</th>
+				<th>Moderators</th>
+			</tr>
+			<webobject name=RowRepetition>
+				<tr bgcolor=#ffffff valign=TOP>
+					<td><WEBOBJECT NAME=ForumImage></WEBOBJECT>&nbsp;<webobject name=Hyperlink1></webobject></td>
+					<td align=CENTER bgcolor=#ffffff><b><font size=2><webobject name=String1></webobject></font></b></td>
+					<td align=CENTER bgcolor=#ffffff><b><font size=2><webobject name=String2></webobject></font></b></td>
+					<td bgcolor=#ffffff><webobject name=Repetition1><font size=2><b><webobject name=String3></webobject></b></font></webobject></td>
+				</tr>
+			</webobject>
+		</table></WEBOBJECT>

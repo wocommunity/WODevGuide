@@ -1,0 +1,37 @@
+Form1: WOForm {
+	actionClass = "Register";
+	directActionName = "user";
+}
+
+ForumTemplate: ForumTemplate {
+	onLoad = onLoad;
+	title = "Registration";
+}
+
+HomeLink2: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+TextField1: WOTextField {
+	name = "username";
+	size = 10;
+	value = username;
+}
+
+TextField2: WOTextField {
+	name = "firstName";
+	value = firstName;
+	size = 15;
+}
+
+TextField3: WOTextField {
+	name = "lastName";
+	value = lastName;
+	size = 15;
+}
+
+TextField4: WOTextField {
+	name = "email";
+	value = email;
+}

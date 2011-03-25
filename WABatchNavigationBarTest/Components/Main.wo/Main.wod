@@ -1,0 +1,15 @@
+DisplayList: WORepetition {item = movie; list = movieDisplayGroup.displayedObjects; }
+
+WABatchNavigationBar: WABatchNavigationBar {
+	actionClass = "DirectAction";
+	directActionName = "main";
+	displayGroup = movieDisplayGroup;
+	objectName = "Movie";
+}
+
+categoryItem: WOString {value = movie.category;  }
+dateReleasedItem: WOString {value = movie.dateReleased; dateformat = "%m/%d/%Y"; }
+revenueItem: WOString {value = movie.revenue; numberformat = "###.##"; }
+titleItem: WOString {value = movie.title;  }
+
+

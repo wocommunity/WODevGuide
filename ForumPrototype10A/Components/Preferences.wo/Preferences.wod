@@ -1,0 +1,19 @@
+ForumTemplate: ForumTemplate {
+	title = "User Preferences";
+	onLoad = onLoad;
+}
+
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+TabPanel: WOTabPanel {
+	selectedTab = selectedTab;
+	tabs = tabs;
+}
+
+TabSwitch: WOSwitchComponent {
+	WOComponentName = componentName;
+	msg = msg;
+}

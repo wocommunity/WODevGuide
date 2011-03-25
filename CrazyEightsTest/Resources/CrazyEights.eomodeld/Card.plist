@@ -1,0 +1,63 @@
+{
+    attributes = (
+        {
+            columnName = "CARD_ID"; 
+            externalType = longlong; 
+            name = cardID; 
+            precision = 20; 
+            valueClassName = NSNumber; 
+            valueType = l; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = FILENAME; 
+            externalType = char; 
+            name = filename; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 255; 
+        }, 
+        {
+            columnName = NAME; 
+            externalType = char; 
+            name = name; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = RANK; 
+            externalType = char; 
+            name = rank; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = SUIT; 
+            externalType = char; 
+            name = suit; 
+            valueClassName = NSString; 
+            valueType = c; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = VALUE; 
+            externalType = long; 
+            name = value; 
+            precision = 10; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (rank, suit, filename, value, cardID, name); 
+    className = Card; 
+    classProperties = (rank, suit, filename, value, name); 
+    externalName = CARD; 
+    fetchSpecificationDictionary = {}; 
+    name = Card; 
+    primaryKeyAttributes = (cardID); 
+}

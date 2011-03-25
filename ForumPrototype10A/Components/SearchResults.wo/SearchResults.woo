@@ -1,0 +1,27 @@
+{
+    "WebObjects Release" = "WebObjects 5.0"; 
+    encoding = NSMacOSRomanStringEncoding; 
+    variables = {
+        postsDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODatabaseDataSource; 
+                editingContext = application.sharedEditingContext;
+                fetchSpecification = {
+                    class = EOFetchSpecification; 
+                    entityName = Post; 
+                    fetchLimit = 0; 
+                    isDeep = YES; 
+                }; 
+                fetchSpecificationName = Search; 
+            }; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 10; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = (
+                {class = EOSortOrdering; key = timestamp; selectorName = "compareAscending:"; }
+            ); 
+        }; 
+    }; 
+}

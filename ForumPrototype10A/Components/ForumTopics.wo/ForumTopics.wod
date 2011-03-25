@@ -1,0 +1,60 @@
+BatchNavigationBar: WABatchNavigationBar { 	objectName = "Topics";
+	displayGroup = topicsDisplayGroup;
+	queryDictionary = forumKey;
+	directActionName = "topics";
+	actionClass = "DirectAction";
+}
+
+ForumName: WOString {
+	value = topicsDisplayGroup.masterObject.name;
+}
+
+ForumTemplate: ForumTemplate {
+	title = "Topics";
+}
+
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+NewTopicConditional: WOConditional {
+	condition = hasSession;
+}
+
+NewTopicLink: WOHyperlink {
+	action = startTopic;
+}
+
+PostCount: WOString {
+	value = topic.postsCount;
+}
+
+PostMadeBy: WOString {
+	value = topic.lastPostMadeBy;
+}
+
+RowRepetition: WORepetition { 	list = topicsDisplayGroup.displayedObjects;
+	item = topic;
+}
+
+TimeOfLastPost: WOString {
+	value = topic.timeOfLastPost;
+	dateformat = "%a %b %d %Y %X";
+}
+
+TopicImage: WOImage {
+	filename = "yellowpage.gif";
+	framework = "app";
+}
+
+TopicLink: WOHyperlink {
+	string = topic.name;
+	directActionName = "posts";
+	actionClass = "DirectAction";
+	?topicID = topicID;
+}
+
+TopicStarter: WOString {
+	value = topic.starter;
+}

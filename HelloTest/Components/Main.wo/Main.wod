@@ -1,0 +1,7 @@
+Form1: WOForm {
+	action = submit;
+}
+
+TextField1: WOTextField {
+	value = application.username;
+}

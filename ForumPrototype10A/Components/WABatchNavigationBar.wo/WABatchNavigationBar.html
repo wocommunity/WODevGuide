@@ -1,0 +1,56 @@
+<webobject name = "IsBatchedDisplay">
+  <webobject name = "NavigationTable">
+    <tr>
+      <td>
+        <table border = "0" width = "100%">
+          <tr>
+            <webobject name = "EntityNameConditional">
+              <td align = "left" valign = "baseline">
+                <center>
+                  <webobject name = "FontContainer">
+                    <strong>
+                      <webobject name = "Count" />
+                      <webobject name = "EntityName" />(s)</strong>
+                  </webobject>
+                </center>
+              </td>
+            </webobject>
+            <td align = "center" valign = "middle">
+              <font size = "-1">
+                <webobject name = "FontContainer2">Display 
+                  <webobject name = "ItemsPerBatch" />
+                  items</webobject>
+              </font>
+            </td>
+            <td align = "right" valign = "middle">
+              <webobject name = "BatchIndexForm">
+                <font size = "-1">
+                  <webobject name = "FontContainer3">
+                    <webobject name = "PreviousBatchLink"><webobject name = "LeftArrow" /></webobject>&nbsp; Page</webobject>
+                </font>
+                <webobject name = "BatchNumber" />
+                <webobject name = "FontContainer4">
+                  <font size = "-1">of 
+                    <webobject name = "TotalBatches" />
+                    &nbsp;<webobject name = "NextBatchLink"><webobject name = "RightArrow" /></webobject>
+                  </font>
+                </webobject>
+              </webobject>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </webobject>
+</webobject>
+<webobject name = "IsNotBatchedDisplay">
+  <webobject name = "NavigationTable2">
+    <tr>
+      <td align = "left">
+        <strong>
+          <webobject name = "Count2" />
+          <webobject name = "EntityName2" />(s)</strong>
+      </td>
+    </tr>
+  </webobject>
+</webobject>

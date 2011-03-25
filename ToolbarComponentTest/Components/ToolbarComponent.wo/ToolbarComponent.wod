@@ -1,0 +1,49 @@
+Hyperlink1: WOHyperlink {
+	pageName = "Main";
+}
+
+Hyperlink2: WOHyperlink {
+	pageName = "Main";
+}
+
+Hyperlink3: WOHyperlink {
+	pageName = "Main";
+}
+
+Hyperlink4: WOHyperlink {
+	pageName = "Main";
+}
+
+Hyperlink5: WOHyperlink {
+	pageName = "Main";
+}
+
+Image1: WOImage {
+	border = "0";
+	filename = "home.gif";
+	framework = "app";
+}
+
+Image2: WOImage {
+	border = 0;
+	filename = "search.gif";
+	framework = "app";
+}
+
+Image3: WOImage {
+	border = 0;
+	filename = "index.gif";
+	framework = "app";
+}
+
+Image4: WOImage {
+	border = 0;
+	filename = "add.gif";
+	framework = "app";
+}
+
+Image5: WOImage {
+	border = 0;
+	filename = "help.gif";
+	framework = "app";
+}

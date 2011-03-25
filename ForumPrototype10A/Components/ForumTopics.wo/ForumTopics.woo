@@ -1,0 +1,20 @@
+{
+    "WebObjects Release" = "WebObjects 5.0"; 
+    encoding = NSMacOSRomanStringEncoding; 
+    variables = {
+        topicsDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODetailDataSource; 
+                detailKey = topics; 
+                masterClassDescription = Forum; 
+            }; 
+            fetchesOnLoad = YES; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 10; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = (); 
+        }; 
+    }; 
+}

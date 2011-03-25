@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WXTextField" wocomponentcontent="false">
+
+		<binding name="name"/>
+		<binding name="value"/>
+		<binding name="dateFormat" defaults="Date Format Strings"/>
+		<binding name="numberFormat" defaults="Number Format Strings"/>
+
+		<validation message="&apos;value&apos; is a required binding">
+			<unbound name="value"/>
+		</validation>
+
+		<validation message="&apos;value&apos; must be bound to a settable value">
+			<unsettable name="value"/>
+		</validation>
+	</wo>
+</wodefinitions>

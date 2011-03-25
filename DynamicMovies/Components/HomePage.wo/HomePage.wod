@@ -1,0 +1,22 @@
+/*
+ * HomePage.wod
+ * [ThinkMovies Project]
+ *
+ * Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+ * All rights reserved.
+ *
+ * You may freely copy, distribute and reuse the code in this example.
+ * Apple disclaims any warranty of any kind, expressed or implied,
+ * as to its fitness for any particular use.
+ */
+ 
+Image1: WOImage {
+	filename = "titledynamicmovies.gif";
+	framework = "app";
+}
+
+Splash: WOMappedRollover {
+	imageFile = "splash.gif";
+	imageMap = application.imageMap;
+	imageName = "splash";
+}

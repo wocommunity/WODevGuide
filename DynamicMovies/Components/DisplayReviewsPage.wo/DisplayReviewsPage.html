@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- 
+  -- DisplayReviewsPage.html
+  -- [ThinkMovies Project]
+  --
+  -- Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+  -- All rights reserved.
+  --
+  -- You may freely copy, distribute and reuse the code in this example.
+  -- Apple disclaims any warranty of any kind, expressed or implied,
+  -- as to its fitness for any particular use.
+  -->
+<html>
+  <head>
+    <meta name = "generator" content = "WebObjects 5.0" />
+    <title>Think Movies : Reviews For <webobject name = "String1" /></title>
+  </head>
+  <body bgcolor = "#FFFFFF">
+    <center>
+      <webobject name = "Toolbar" />
+      <p>&nbsp;</p>
+    </center>
+    <table border = "0" cellpadding = "0" cellspacing = "0" bgcolor = "000000" align = "CENTER">
+      <tr>
+        <td align = "CENTER">
+          <!-- Border Table -->
+          <table bgcolor = "CFCFFF" cellspacing = "1" cellpadding = "5" border = "0">
+            <tr>
+              <td align = "CENTER" colspan = "3" bgcolor = "CFCFFF">
+                <font size = "+1" color = "00004F">
+                  <b> <webobject name = "String1" /> </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p align = "CENTER">
+      <webobject name = "Hyperlink1">Info</webobject>
+      &nbsp;&nbsp; 
+      <webobject name = "Hyperlink3">Voting</webobject>
+      <br />
+      <webobject name = "Hyperlink2">Add a New Review</webobject>
+      <br />
+    </p>
+    <center>
+      <p>Click a link to select that review.</p>
+      <webobject name = "SelectionList">&nbsp;&nbsp; 
+        <webobject name = "Conditional1" />
+        <webobject name = "SelectObjectLink"> <webobject name = "ObjectIdentifier" /> </webobject>
+        <webobject name = "Conditional2" />
+      </webobject>
+      &nbsp;&nbsp; 
+    </center>
+    <hr />
+    <!-- Displayed objects segment -->
+    <br />
+    Reviewer: 
+    <webobject name = "String3" />
+    <br />
+    <br />
+    <webobject name = "String4" />
+    <br />
+    <hr />
+  </body>
+</html>

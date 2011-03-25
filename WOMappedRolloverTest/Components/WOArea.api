@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WOArea" wocomponentcontent="false">
+
+		<binding name="coords"/>
+		<binding name="directActionName" defaults="Direct Actions"/>
+		<binding name="shape"/>
+
+		<validation message="&apos;shape&apos; is a required binding">
+			<unbound name="shape"/>
+		</validation>
+
+		<validation message="&apos;directActionName&apos; is a required binding">
+			<unbound name="directActionName"/>
+		</validation>
+
+		<validation message="&apos;coords&apos; is a required binding">
+			<unbound name="coords"/>
+		</validation>
+	</wo>
+</wodefinitions>

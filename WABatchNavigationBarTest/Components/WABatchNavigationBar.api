@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WABatchNavigationBar" wocomponentcontent="false">
+		<image path="WOBatchNavigationBar.tiff"/>
+
+		<binding name="objectName"/>
+		<binding name="displayGroup"/>
+		<binding name="width"/>
+		<binding name="textColor"/>
+		<binding name="border"/>
+		<binding name="bgcolor"/>
+		<binding name="directActionName" defaults="Direct Actions"/>
+		<binding name="actionClass" defaults="Direct Action Classes"/>
+
+		<validation message="&apos;displayGroup&apos; is a required binding">
+			<unbound name="displayGroup"/>
+		</validation>
+
+		<validation message="&apos;directActionName&apos; is a required binding">
+			<unbound name="directActionName"/>
+		</validation>
+	</wo>
+</wodefinitions>

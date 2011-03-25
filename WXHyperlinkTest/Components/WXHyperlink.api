@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WXHyperlink" wocomponentcontent="true">
+
+		<binding name="href"/>
+		<binding name="action"/>
+		<binding name="directActionName" defaults="Direct Actions"/>
+		<binding name="string"/>
+		<binding name="target"/>
+		<binding name="actionClass" defaults="Direct Action Classes"/>
+		<binding name="pageName" defaults="Page Names"/>
+		<binding name="queryDictionary"/>
+
+		<validation message="One of &apos;pageName&apos;, &apos;directActionName&apos;, &apos;href&apos; or &apos;action&apos; must be set.">
+			<and>
+				<unbound name="pageName"/>
+				<unbound name="href"/>
+				<unbound name="directActionName"/>
+				<unbound name="action"/>
+			</and>
+		</validation>
+
+		<validation message="Only one of &apos;pageName&apos;, &apos;directActionName&apos;, &apos;href&apos; and &apos;action&apos; may be set.">
+			<or>
+				<and>
+					<bound name="pageName"/>
+					<or>
+						<bound name="directActionName"/>
+						<bound name="href"/>
+						<bound name="action"/>
+					</or>
+				</and>
+				<and>
+					<bound name="directActionName"/>
+					<or>
+						<bound name="href"/>
+						<bound name="action"/>
+					</or>
+				</and>
+				<and>
+					<bound name="href"/>
+					<bound name="action"/>
+				</and>
+			</or>
+		</validation>
+	</wo>
+</wodefinitions>

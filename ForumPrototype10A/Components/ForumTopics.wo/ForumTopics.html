@@ -1,0 +1,21 @@
+<WEBOBJECT NAME=ForumTemplate><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=100%><TR><TH ALIGN=LEFT><FONT SIZE=2><WEBOBJECT NAME=HomeLink>Home</WEBOBJECT>
+		&gt; </FONT><FONT SIZE=2><webobject name=ForumName></webobject></FONT></TH><WEBOBJECT NAME=NewTopicConditional><TD ALIGN=RIGHT WIDTH=100><FONT SIZE=2><WEBOBJECT NAME=NewTopicLink>New Topic</WEBOBJECT></FONT></TD></WEBOBJECT></TR></TABLE><P></P><table CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100% BGCOLOR=#aaaaaa>
+			<tr>
+				<td bgcolor="e0e0e0" colspan=4><webobject name=BatchNavigationBar></webobject></td>
+			</tr>
+			<tr BGCOLOR=#e9e9e9>
+				<th ALIGN=LEFT><webobject name=ForumName></webobject></th>
+				<th align=CENTER>Starter</th>
+				<th align=CENTER>#Replies</th>
+				<th align=CENTER>Last Post</th>
+			</tr>
+			<webobject name=RowRepetition>
+				<tr BGCOLOR=#ffffff VALIGN=TOP>
+					<td><WEBOBJECT NAME=TopicImage></WEBOBJECT>&nbsp;<webobject name=TopicLink></webobject></td>
+					<td align=CENTER><b><FONT SIZE=2><webobject name=TopicStarter></webobject></FONT></b></td>
+					<td align=CENTER><B><FONT SIZE=2><webobject name=PostCount></webobject></FONT></B></td>
+					<td align=CENTER><webobject name=TimeOfLastPost></webobject>
+						by <b><FONT SIZE=2><webobject name=PostMadeBy></webobject></FONT></b></td>
+				</tr>
+			</webobject>
+		</table></WEBOBJECT>

@@ -1,0 +1,97 @@
+ArchiveLink: WOHyperlink {
+	actionClass = "Archive";
+	directActionName = "default";
+	queryDictionary = topicKey;
+}
+
+BatchNavigationBar: WABatchNavigationBar { 	
+	objectName = "Posts";
+	displayGroup = postsDisplayGroup;
+	queryDictionary = topicKey;
+	directActionName = "posts";
+	actionClass = "DirectAction";
+}
+
+Conditional1: WOConditional {
+	condition = post.hasAttachment;
+}
+
+DisplayReplyConditional: WOConditional {
+	condition = hasSession;
+}
+
+DownloadLink: WOHyperlink {
+	actionClass = "Download";
+	directActionName = post.filePath;
+	string = post.filePath;
+	?postID = postID;
+}
+
+EmailImage: WOImage {
+	border = "0";
+	filename = "email_3.gif";
+	framework = "app";
+}
+
+EmailLink: WOHyperlink {
+	?subject = postsDisplayGroup.masterObject.name;
+	href = mailTo;
+}
+
+ForumTemplate: ForumTemplate {
+	title = "Posts";
+}
+
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+PostImage: WOImage {
+	filename = "posticon.gif";
+	framework = "app";
+}
+
+PostMessage: WOString {
+	value = post.message;
+	escapeHTML = false;
+}
+
+PostTime: WOString {
+	value = post.timestamp;
+	dateformat = "%x %H:%M:%S";
+}
+
+ReplyImage: WOImage {
+	border = 0;
+	filename = "reply_3.gif";
+	framework = "app";
+}
+
+ReplyLink: WOHyperlink {
+	action = reply;
+}
+
+RowRepetition: WORepetition { 	list = postsDisplayGroup.displayedObjects;
+	item = post;
+	index = index;
+}
+
+TopicName: WOString {
+	value = postsDisplayGroup.masterObject.name;
+}
+
+TopicsLink: WOHyperlink {
+	?forumID = forumID;
+	actionClass = "DirectAction";
+	directActionName = "topics";
+	string = postsDisplayGroup.masterObject.forum.name;
+}
+
+UserName: WOString {
+	value = post.user.name;
+}
+
+UserPostsCount: WOString {
+	value = post.user.postsCount;
+}

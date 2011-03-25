@@ -1,0 +1,131 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = CLASS_NAME; 
+            externalType = char; 
+            name = className; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = EMAIL; 
+            externalType = char; 
+            name = email; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = FIRST_NAME; 
+            externalType = char; 
+            name = firstName; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 25; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = LAST_NAME; 
+            externalType = char; 
+            name = lastName; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 25; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NAME; 
+            externalType = char; 
+            name = name; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = PASSWORD; 
+            externalType = char; 
+            name = password; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT COUNT(*) FROM POST WHERE POST.USER_ID = USER.USER_ID)"; 
+            externalType = long; 
+            isReadOnly = Y; 
+            name = postsCount; 
+            readFormat = "(SELECT COUNT(*) FROM POST WHERE POST.USER_ID = USER.USER_ID)"; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = SIGNATURE; 
+            externalType = char; 
+            internalInfo = {_nameInObjectStore = NAME; }; 
+            name = signature; 
+            serverTimeZone = Etc/GMT; 
+            valueClassName = NSString; 
+            width = 255; 
+        }, 
+        {
+            columnName = USER_ID; 
+            externalType = long; 
+            name = userID; 
+            serverTimeZone = Asia/Calcutta; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (userID, name, lastName, firstName, email, password, className, signature); 
+    className = biz.forum.model.User; 
+    classProperties = (
+        name, 
+        lastName, 
+        firstName, 
+        email, 
+        password, 
+        forums, 
+        className, 
+        posts, 
+        postsCount, 
+        signature
+    ); 
+    externalName = USER; 
+    fetchSpecificationDictionary = {}; 
+    name = Moderator; 
+    parent = User; 
+    primaryKeyAttributes = (userID); 
+    relationships = (
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = ForumModerator; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userID; sourceAttribute = userID; }); 
+            name = forumModerators; 
+            ownsDestination = Y; 
+            propagatesPrimaryKey = Y; 
+        }, 
+        {
+            definition = forumModerators.forum; 
+            joinSemantic = EOInnerJoin; 
+            name = forums; 
+        }, 
+        {
+            destination = Post; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userID; sourceAttribute = userID; }); 
+            name = posts; 
+        }
+    ); 
+    restrictingQualifier = "(className = 'Moderator')"; 
+}

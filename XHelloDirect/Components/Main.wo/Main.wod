@@ -1,0 +1,20 @@
+Body1: WOBody {
+	bgcolor = "#FFFFFF";
+	filename = "aqua_bg.jpg";
+	framework = "WOExamplesHarness";
+}
+
+Form: WOForm {
+	directActionName = "greeting";
+	actionClass = "DirectAction";
+}
+
+Image1: WXImage {
+	filename = "hello_world_title.gif";
+	framework = "app";
+}
+
+TextField: WXTextField {
+	name = "username";
+	value = username;
+}

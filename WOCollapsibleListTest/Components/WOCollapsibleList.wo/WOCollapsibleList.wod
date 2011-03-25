@@ -1,0 +1,11 @@
+ComponentContent1: WOComponentContent {
+}
+
+Conditional1: WOConditional {
+	condition = condition;
+}
+
+Hyperlink: WOHyperlink {
+	action = toggle;
+	string = label;
+}

@@ -1,0 +1,18 @@
+Conditional: WOConditional {
+	condition = condition;
+}
+
+NegativeConditional: WOConditional {
+	condition = condition;
+	negate = true;
+}
+
+PowerSwitch_Off: WOActiveImage {
+	filename = "PowerSwitch_Off.gif";
+	action = toggle;
+}
+
+PowerSwitch_On: WOActiveImage {
+	filename = "PowerSwitch_On.gif";
+	action = toggle;
+}

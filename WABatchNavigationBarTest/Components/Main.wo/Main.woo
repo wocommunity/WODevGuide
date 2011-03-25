@@ -1,0 +1,24 @@
+{
+    "WebObjects Release" = "WebObjects 5.0"; 
+    variables = {
+        movieDisplayGroup = {
+            class = WODisplayGroup; 
+            dataSource = {
+                class = EODatabaseDataSource; 
+                editingContext = session.defaultEditingContext; 
+                fetchSpecification = {
+                    class = EOFetchSpecification; 
+                    entityName = Movie; 
+                    fetchLimit = 0; 
+                    isDeep = YES; 
+                }; 
+            }; 
+            fetchesOnLoad = YES; 
+            formatForLikeQualifier = "%@*"; 
+            localKeys = (); 
+            numberOfObjectsPerBatch = 15; 
+            selectsFirstObjectAfterFetch = YES; 
+            sortOrdering = (); 
+        }; 
+    }; 
+}

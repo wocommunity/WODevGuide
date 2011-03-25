@@ -1,0 +1,80 @@
+{
+    attributes = (
+        {
+            allowsNull = Y; 
+            columnName = ATTACHMENT; 
+            externalType = object; 
+            name = attachment; 
+            valueClassName = NSData; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = FILE_PATH; 
+            externalType = char; 
+            name = filePath; 
+            valueClassName = NSString; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = MESSAGE; 
+            externalType = object; 
+            name = message; 
+            valueClassName = NSString; 
+        }, 
+        {
+            columnName = POST_ID; 
+            externalType = long; 
+            name = postID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = TIMESTAMP; 
+            externalType = datetime; 
+            name = timestamp; 
+            valueClassName = NSCalendarDate; 
+        }, 
+        {
+            columnName = TOPIC_ID; 
+            externalType = long; 
+            name = topicID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = USER_ID; 
+            externalType = long; 
+            name = userID; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (postID, timestamp, message, userID, topicID, attachment, filePath); 
+    className = biz.forum.model.Post; 
+    classProperties = (timestamp, message, topic, user, attachment, filePath); 
+    externalName = POST; 
+    name = Post; 
+    primaryKeyAttributes = (postID); 
+    relationships = (
+        {
+            destination = Topic; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = topicID; sourceAttribute = topicID; }); 
+            name = topic; 
+        }, 
+        {
+            destination = User; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userID; sourceAttribute = userID; }); 
+            name = user; 
+        }
+    ); 
+}

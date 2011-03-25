@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="33" version="2.0">
+<workbenchAdvisor/>
+<window height="825" width="1440" x="-1" y="22">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.maven.ide.eclipse.views.MavenIndexesView"/>
+</fastViewData>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="85" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="85" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="63" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="104" y="22"/>
+<coolItem id="org.objectstyle.wolips.eomodeler.actionSet" itemType="typeToolBarContribution" x="318" y="22"/>
+<coolItem id="org.objectstyle.wolips.wizards.ElementCreationActionSet" itemType="typeToolBarContribution" x="72" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="156" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.objectstyle.wolips.eogenerator.ui.editors.EOGeneratorEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.objectstyle.wolips.TemplateEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.objectstyle.wolips.eomodeler.editors.EOModelEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.objectstyle.wolips.componenteditor.ComponentEditor" itemType="typeToolBarContribution" x="340" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1262044382139" focus="true" label="Workspace - WOLips">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.objectstyle.wolips.componenteditor.ComponentEditor" name="Main.html" partName="Main" path="/Users/probert/Clients/WOCommunity/WODevGuide/WXImageElementTest/Components/Main.wo/Main.html" title="Main" tooltip="Main WOComponent" workbook="DefaultEditorWorkbook">
+<input count="4" editor0="org.objectstyle.wolips.wodclipse.html.HtmlEditor" editor1="org.objectstyle.wolips.wodclipse.WodEditor" editor2="org.objectstyle.wolips.wooeditor.editor.WooEditor" editor3="org.objectstyle.wolips.wodclipse.api.ApiEditor" factoryID="org.objectstyle.wolips.components.input.ComponentEditorInputFactory" html="true" input0="/WXImageElementTest/Components/Main.wo/Main.html" input1="/WXImageElementTest/Components/Main.wo/Main.wod" input2="/WXImageElementTest/Components/Main.wo/Main.woo" input3="/WXImageElementTest/Components/Main.api" name="Main"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="config.xml" partName="config.xml" path="/Users/probert/Desktop/Cleanup/XCodeMigration/config.xml" title="config.xml" tooltip="XCodeMigration/config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/XCodeMigration/config.xml"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.objectstyle.wolips.ui.view.RelatedView" partName="Related">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" isWindowWorkingSet="true" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.maven.ide.eclipse.MavenModuleFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.maven.ide.eclipse.views.MavenIndexesView" partName="Maven Indexes"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="org.objectstyle.wolips.jdt.ui.WOPackageExplorer" partName="WO Explorer">
+<viewState group_libraries="1" isWindowWorkingSet="true" layout="2" linkWithEditor="1" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_WOAfile.icns" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.ui.javaelementfilters.wocomponent" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.APIFilesFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.LibraryFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_*.api" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.EmptyPackageFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId__*.java" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_build.xml" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.ui.javaelementfilters.framework" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.ui.javaelementfilters.build" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_PB.project" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_Properties" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_*.woo" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_build.properties" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_Makefil*" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_CustomInfo.Plist" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_dist" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.ui.javaelementfilters.woproject" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.objectstyle.wolips.jdt.ui.WOPackageExplorer_patternFilterId_*.xcode*" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (38 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="491"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+</views>
+<perspectives activePart="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" activePerspective="org.objectstyle.wolips.ui.Perspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.help.actionSet"/>
+<alwaysOnActionSet id="org.objectstyle.wolips.componenteditor.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<new_wizard_action id="org.maven.ide.eclipse.wizards.Maven2ProjectWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.objectstyle.wolips.ui.Perspective"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViews>&#x0A;<view id="org.maven.ide.eclipse.views.MavenIndexesView" ratio="0.3"/>
+</fastViews>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fa9568" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.objectstyle.wolips.ui.view.PerspectiveFactory" id="org.objectstyle.wolips.ui.Perspective" label="WOLips"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.help.actionSet"/>
+<alwaysOnActionSet id="org.objectstyle.wolips.componenteditor.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.objectstyle.wolips.wizards.ElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.objectstyle.wolips.ui.view.RelatedView"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.application"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.wonderapplication"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.framework"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.wonderframework"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.d2wapplication"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.wonderd2wapplication"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.jarproject"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.subproject"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.eomodel"/>
+<new_wizard_action id="org.objectstyle.wolips.wizards.new.wo.5.1.component"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<view id="org.objectstyle.wolips.jdt.ui.WOPackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.objectstyle.wolips.ui.view.RelatedView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.objectstyle.wolips.jdt.ui.WOPackageExplorer" appearance="2" expanded="2">
+<page content="org.objectstyle.wolips.jdt.ui.WOPackageExplorer" label="WO Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22393282" ratioLeft="320" ratioRight="1109" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.75" ratioLeft="555" ratioRight="185" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@66a095" ratio="0.7495344" ratioLeft="805" ratioRight="269" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="left_bottom" ratio="0.6486486" ratioLeft="480" ratioRight="260" relationship="4" relative="left">
+<folder activePageID="org.objectstyle.wolips.ui.view.RelatedView" appearance="2" expanded="2">
+<page content="org.objectstyle.wolips.ui.view.RelatedView" label="Related"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.objectstyle.wolips.eomodeler.EOModelerPerspectiveFactory" id="org.objectstyle.wolips.eomodeler.EOModelerPerspective" label="Entity Modeler"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.help.actionSet"/>
+<alwaysOnActionSet id="org.objectstyle.wolips.componenteditor.actionSet"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.44972068" ratioLeft="644" ratioRight="788" relationship="2" relative="left"/>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="370" ratioRight="370" relationship="4" relative="left">&#x0A;<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor count="4" editor0="org.objectstyle.wolips.wodclipse.html.HtmlEditor" editor1="org.objectstyle.wolips.wodclipse.WodEditor" editor2="org.objectstyle.wolips.wooeditor.editor.WooEditor" editor3="org.objectstyle.wolips.wodclipse.api.ApiEditor" factoryID="org.objectstyle.wolips.components.input.ComponentEditorInputFactory" html="true" id="org.objectstyle.wolips.componenteditor.ComponentEditor" input0="/WXImageElementTest/Components/Main.wo/Main.html" input1="/WXImageElementTest/Components/Main.wo/Main.wod" input2="/WXImageElementTest/Components/Main.wo/Main.woo" input3="/WXImageElementTest/Components/Main.api" name="Main"/>
+<editor count="4" editor0="org.objectstyle.wolips.wodclipse.html.HtmlEditor" editor1="org.objectstyle.wolips.wodclipse.WodEditor" editor2="org.objectstyle.wolips.wooeditor.editor.WooEditor" editor3="org.objectstyle.wolips.wodclipse.api.ApiEditor" factoryID="org.objectstyle.wolips.components.input.ComponentEditorInputFactory" html="true" id="org.objectstyle.wolips.componenteditor.ComponentEditor" input0="/WXImageElementTest/Components/Main.wo/Main.html" input1="/WXImageElementTest/Components/Main.wo/Main.wod" input2="/WXImageElementTest/Components/Main.wo/Main.woo" input3="/WXImageElementTest/Components/Main.api" name="Main"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/XCodeMigration/config.xml"/>
+</editors>
+<item historyLabel="Main" index="0"/>
+<item historyLabel="Main" index="1"/>
+<item active="true" historyLabel="config.xml" index="2"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="config.xml" tooltip="XCodeMigration/config.xml">
+<persistable path="/XCodeMigration/config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.objectstyle.wolips.componenteditor.ComponentEditor" name="Main.html" tooltip="WXImageElementTest/Components/Main.wo/Main.html">
+<persistable path="/WXImageElementTest/Components/Main.wo/Main.html"/>
+</file>
+</mruList>
+</workbench>

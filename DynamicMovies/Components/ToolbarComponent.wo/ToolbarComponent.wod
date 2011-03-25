@@ -1,0 +1,34 @@
+Add: WORollover {
+	directActionName = "AddMovie";
+	highlightedImage = "addH.gif";
+	imageName = "add";
+	unhighlightedImage = "add.gif";
+}
+
+Help: WORollover {
+	directActionName = "Help";
+	highlightedImage = "helpH.gif";
+	imageName = "help";
+	unhighlightedImage = "help.gif";
+}
+
+Home: WORollover {
+	directActionName = "Home";
+	highlightedImage = "homeH.gif";
+	imageName = "home";
+	unhighlightedImage = "home.gif";
+}
+
+Index: WORollover {
+	directActionName = "MasterIndex";
+	highlightedImage = "indexH.gif";
+	imageName = "index";
+	unhighlightedImage = "index.gif";
+}
+
+Search: WORollover {
+	directActionName = "Search";
+	highlightedImage = "searchH.gif";
+	imageName = "searchMovies";
+	unhighlightedImage = "search.gif";
+}

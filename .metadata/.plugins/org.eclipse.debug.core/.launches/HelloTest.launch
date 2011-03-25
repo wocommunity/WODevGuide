@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="org.objectstyle.wolips.launching.WOLocalJavaApplication">
+<stringAttribute key="WOJavaLocalApplicationLaunchConfigurationDelegate.OpenInBrowser" value="false"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/HelloTest"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.objectstyle.wolips.launching.WORuntimeClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Application"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="HelloTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${working_dir_loc_WOLips:HelloTest}"/>
+</launchConfiguration>

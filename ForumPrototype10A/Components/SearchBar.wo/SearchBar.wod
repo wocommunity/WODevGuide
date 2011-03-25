@@ -1,0 +1,9 @@
+SearchBarForm: WOForm {
+	actionClass = "SearchAction";
+	directActionName = "results";
+}
+
+SearchButton: WOImageButton {
+	filename = "arrow_button.gif";
+	framework = "app";
+}

@@ -1,0 +1,8 @@
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+Template: SimpleForumTemplate {
+	title = "Error";
+}

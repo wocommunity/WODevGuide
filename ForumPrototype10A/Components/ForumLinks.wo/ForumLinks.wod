@@ -1,0 +1,11 @@
+ForumLink: WOHyperlink {
+	?forumID = forumID;
+	actionClass = "DirectAction";
+	directActionName = "topics";
+	string = forum.name;
+}
+
+Table: WOTable { 	list = application.sharedEditingContext.objectsByEntityName.Forum;
+	maxColumns = 6;
+	item = forum;
+}

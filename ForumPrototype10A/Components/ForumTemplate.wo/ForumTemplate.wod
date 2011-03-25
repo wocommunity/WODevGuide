@@ -1,0 +1,19 @@
+Body: WOBody {
+	filename = "aqua_bg.jpg";
+	framework = "app";
+	mimeType = "image/jpeg";
+	onLoad = ^onLoad;
+}
+
+ForumLinks: ForumLinks {
+}
+
+PageContent: WOComponentContent {
+}
+
+SearchBar: SearchBar {
+}
+
+Title: WOString {
+	value = ^title;
+}

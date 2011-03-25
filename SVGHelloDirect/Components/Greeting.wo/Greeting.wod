@@ -1,0 +1,4 @@
+SwitchComponent1: WOSwitchComponent {
+	WOComponentName = componentName;
+	text = username;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WOSVG" wocomponentcontent="false">
+
+		<binding name="directActionName" defaults="Direct Actions"/>
+		<binding name="queryDictionary"/>
+
+		<validation message="&apos;directActionName&apos; is a required binding">
+			<unbound name="directActionName"/>
+		</validation>
+	</wo>
+</wodefinitions>

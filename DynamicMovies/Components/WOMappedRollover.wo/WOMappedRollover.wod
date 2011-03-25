@@ -1,0 +1,29 @@
+Area: WOArea {
+	shape = area.shape;
+	coords = area.coords;
+	directActionName = area.directActionName;
+	onMouseOver = onMouseOver;
+}
+
+AreaRepetition: WORepetition {
+	item = area;
+	list = ^imageMap.areas;
+	index = index;
+}
+
+Image: WOGenericElement {
+	elementName = "img";
+	name = ^imageName;
+	src = src;
+	usemap = usemap;
+}
+
+JavaScript: WOJavaScript {
+	scriptString = scriptString;
+}
+
+Map: WOGenericContainer {
+	name = ^imageMap.name;
+	elementName = "map";
+	onMouseOut = onMouseOut;
+}

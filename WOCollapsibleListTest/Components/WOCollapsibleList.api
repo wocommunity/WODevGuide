@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WOCollapsibleList" wocomponentcontent="true">
+
+		<binding name="condition" defaults="Boolean"/>
+		<binding name="label"/>
+
+		<validation message="&apos;label&apos; is a required binding">
+			<unbound name="label"/>
+		</validation>
+
+		<validation message="&apos;condition&apos; must be bound to a settable value">
+			<unsettable name="condition"/>
+		</validation>
+	</wo>
+</wodefinitions>

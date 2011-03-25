@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- 
+  -- HelpPage.html
+  -- [ThinkMovies Project]
+  --
+  -- Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+  -- All rights reserved.
+  --
+  -- You may freely copy, distribute and reuse the code in this example.
+  -- Apple disclaims any warranty of any kind, expressed or implied,
+  -- as to its fitness for any particular use.
+  -->
+<html>
+  <head>
+    <meta name = "generator" content = "WebObjects 5.0" />
+    <title>Think Movies : Help</title>
+  </head>
+  <body bgcolor = "#FFFFFF">
+    <center>
+      <webobject name = "Toolbar" />
+      <br />
+      <font size = "+1">Think Movies Help</font>
+    </center>
+    Contents of Help: 
+    <ul>
+      <li>
+        <a href = "#SEARCH">Search</a>
+      </li>
+      <li>
+        <a href = "#MASTER">Master Index</a>
+      </li>
+      <li>
+        <a href = "#ADD">Add</a>
+      </li>
+      <li>
+        <a href = "#VOTING">Voting</a>
+      </li>
+      <li>
+        <a href = "#REVIEWS">Reviews</a>
+      </li>
+    </ul>
+    <a name = "SEARCH"></a>
+    <b>Search</b>
+    <blockquote>
+      <p>The Search page allows you to search for movies based on 3 criteria: 
+        <i>title</i>, 
+        <i>category</i>, and 
+        <i>date released</i>.   These three criteria are implicitly 'AND'ed 
+        together to create one query.  Therefore, a search for Title='R' and Category='Drama' 
+        would search for movies with the Title beginning with 'R' AND Category equal to 'Drama'.</p>
+      Both the 
+      <i>title</i>
+      and 
+      <i>category</i>
+      attributes are queried case insensitive. 
+    </blockquote>
+    <a name = "MASTER"></a>
+    <b>Master Index</b>
+    <blockquote> The Master Index button performs a query of the database returning all movies. </blockquote>
+    <a name = "ADD"></a>
+    <b>Add</b>
+    <blockquote>
+      The Add page allows you to add a movie to the database.  However, it does not allow 
+      you to create relationships to actors and directors.
+    </blockquote>
+    <a name = "VOTING"></a>
+    <b>Voting</b>
+    <blockquote>
+      While viewing a movie, a voting average is displayed.  The voting average characterizes 
+      the viewer's rating of the movie based on a scale of zero through ten; Ten being an 
+      excellent movie and zero being a very poor movie.
+    </blockquote>
+    <a name = "REVIEWS"></a>
+    <b>Reviews</b>
+    <blockquote>
+      <p>
+        While viewing a movie, a link to its reviews will be displayed.  Click on this link to 
+        see the reviews made of this movie.  If you would like to add a review, click on the link 
+        'Add a New Review'.
+      </p>
+      <p>
+        If no reviews exist, then no links will be displayed below the text 'Click a link to 
+        select that review'.  When reviews do exist, clicking on these links brings up the review 
+        written by that reviewer.
+      </p>
+    </blockquote>
+  </body>
+</html>

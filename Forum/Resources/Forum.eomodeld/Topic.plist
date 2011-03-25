@@ -1,0 +1,92 @@
+{
+    attributes = (
+        {
+            columnName = FORUM_ID; 
+            externalType = long; 
+            name = forumID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT NAME FROM USER WHERE USER_ID = (SELECT USER_ID FROM POST WHERE TIMESTAMP >= (SELECT MAX(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)))"; 
+            externalType = char; 
+            isReadOnly = Y; 
+            name = lastPostMadeBy; 
+            readFormat = "(SELECT NAME FROM USER WHERE USER_ID = (SELECT USER_ID FROM POST WHERE TIMESTAMP >= (SELECT MAX(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)))"; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = NAME; 
+            externalType = char; 
+            name = name; 
+            valueClassName = NSString; 
+            width = 50; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT COUNT(*) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)"; 
+            isReadOnly = Y; 
+            name = postsCount; 
+            readFormat = "(SELECT COUNT(*) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)"; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT NAME FROM USER WHERE USER_ID = (SELECT USER_ID FROM POST WHERE TIMESTAMP <= (SELECT MIN(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)))"; 
+            externalType = char; 
+            name = starter; 
+            readFormat = "(SELECT NAME FROM USER WHERE USER_ID = (SELECT USER_ID FROM POST WHERE TIMESTAMP <= (SELECT MIN(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)))"; 
+            valueClassName = NSString; 
+            width = 10; 
+        }, 
+        {
+            allowsNull = Y; 
+            definition = "(SELECT MAX(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)"; 
+            externalType = datetime; 
+            isReadOnly = Y; 
+            name = timeOfLastPost; 
+            readFormat = "(SELECT MAX(TIMESTAMP) FROM POST WHERE POST.TOPIC_ID = TOPIC.TOPIC_ID)"; 
+            serverTimeZone = Europe/London; 
+            valueClassName = NSCalendarDate; 
+        }, 
+        {
+            columnName = TOPIC_ID; 
+            externalType = long; 
+            name = topicID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (topicID, name, forumID); 
+    className = biz.forum.model.Topic; 
+    classProperties = (name, posts, forum, postsCount, timeOfLastPost, lastPostMadeBy, starter); 
+    externalName = TOPIC; 
+    fetchSpecificationDictionary = {}; 
+    name = Topic; 
+    primaryKeyAttributes = (topicID); 
+    relationships = (
+        {
+            destination = Forum; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = forumID; sourceAttribute = forumID; }); 
+            name = forum; 
+        }, 
+        {
+            deleteRule = EODeleteRuleCascade; 
+            destination = Post; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = topicID; sourceAttribute = topicID; }); 
+            name = posts; 
+            ownsDestination = Y; 
+        }
+    ); 
+}

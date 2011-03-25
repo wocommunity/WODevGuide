@@ -1,0 +1,50 @@
+BatchNavigationBar1: WABatchNavigationBar {
+	displayGroup = postsDisplayGroup;
+	objectName = "Posts";
+	queryDictionary = postsDisplayGroup.queryBindings;
+	actionClass = "SearchAction";
+	directActionName = "results";
+}
+
+ForumTemplate: ForumTemplate {
+	title = "Search Results";
+}
+
+HomeLink: WOHyperlink {
+	actionClass = "DirectAction";
+	directActionName = "default";
+}
+
+PostMessage2: WOString {
+	value = post.message;
+	escapeHTML = false;
+}
+
+PostTime2: WOString {
+	value = post.timestamp;
+	dateformat = "%x %H:%M:%S";
+}
+
+ResultsConditional: WOConditional {
+	condition = postsDisplayGroup.displayedObjects.count;
+}
+
+RowRepetition: WORepetition {
+	item = post;
+	list = postsDisplayGroup.displayedObjects;
+}
+
+SearchLink: WOHyperlink {
+	actionClass = "SearchAction";
+}
+
+TopicPostsLink: WOHyperlink {
+	?topicID = post.topicID;
+	actionClass = "DirectAction";
+	directActionName = "posts";
+	string = post.topic.name;
+}
+
+UserName2: WOString {
+	value = post.user.name;
+}

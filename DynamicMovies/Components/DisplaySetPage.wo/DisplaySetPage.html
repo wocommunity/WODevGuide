@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- 
+  -- DisplaySetPage.html
+  -- [ThinkMovies Project]
+  --
+  -- Copyright (c) 1998, 1999, 2000, Apple Computer, Inc.
+  -- All rights reserved.
+  --
+  -- You may freely copy, distribute and reuse the code in this example.
+  -- Apple disclaims any warranty of any kind, expressed or implied,
+  -- as to its fitness for any particular use.
+  -->
+<html>
+  <head>
+    <meta name = "generator" content = "WebObjects 5.0" />
+    <title>Think Movies : Search Results</title>
+  </head>
+  <body bgcolor = "#FFFFFF">
+    <center><webobject name = "Toolbar" /></center>
+    <center>Search Results:</center>
+    <hr />
+    <table width = "100%" border = "0">
+      <tr>
+        <td align = "left"> <webobject name = "TotalItemsFound" /> movies found. </td>
+        <td align = "center">
+          Item(s) 
+          <webobject name = "FromString" />
+          to 
+          <webobject name = "ToString" />
+        </td>
+        <td align = "right">
+          <webobject name = "PreviousBatch">Previous</webobject>
+          | 
+          <webobject name = "NextBatch">Next</webobject>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <font size = "+1">
+      <webobject name = "ListRepetition">
+        <webobject name = "MovieTitleLink"><webobject name = "MovieTitle" /></webobject>
+        <br />
+      </webobject>
+    </font>
+  </body>
+</html>

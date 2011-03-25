@@ -1,0 +1,12 @@
+ComponentContent1: WOComponentContent {
+}
+
+String: WOString {
+	value = ^string;
+}
+
+XLINK: WOXMLNode {
+	elementName = "a";
+	target = ^target;
+	"xlink:href" = href;
+}

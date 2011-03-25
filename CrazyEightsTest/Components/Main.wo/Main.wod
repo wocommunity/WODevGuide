@@ -1,0 +1,16 @@
+
+SelectionList: WORepetition {item = card; list = cardDisplayGroup.displayedObjects; }
+SelectObjectLink: WOHyperlink {action = selectObject; }
+ObjectIdentifier: WOString {value = card.name; }
+ModificationForm: WOForm {multipleSubmit = true; }
+
+filenameField: WOTextField {value = cardDisplayGroup.selectedObject.filename;  }
+nameField: WOTextField {value = cardDisplayGroup.selectedObject.name;  }
+rankField: WOTextField {value = cardDisplayGroup.selectedObject.rank;  }
+suitField: WOTextField {value = cardDisplayGroup.selectedObject.suit;  }
+valueField: WOTextField {value = cardDisplayGroup.selectedObject.value;  }
+
+
+InsertActiveImage: WOImageButton {action = cardDisplayGroup.insert; filename = "DBWizardInsert.gif"; }
+UpdateActiveImage: WOImageButton {action = saveChanges; filename = "DBWizardUpdate.gif"; }
+DeleteActiveImage: WOImageButton {action = cardDisplayGroup.delete; filename = "DBWizardDelete.gif"; }

@@ -1,0 +1,43 @@
+{
+    attributes = (
+        {
+            columnName = FORUM_ID; 
+            externalType = long; 
+            name = forumID; 
+            precision = 9; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = USER_ID; 
+            externalType = long; 
+            name = userID; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    attributesUsedForLocking = (forumID, userID); 
+    className = EOGenericRecord; 
+    externalName = FORUM_MODERATOR; 
+    fetchSpecificationDictionary = {}; 
+    name = ForumModerator; 
+    primaryKeyAttributes = (forumID, userID); 
+    relationships = (
+        {
+            destination = Forum; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = forumID; sourceAttribute = forumID; }); 
+            name = forum; 
+        }, 
+        {
+            destination = Moderator; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = userID; sourceAttribute = userID; }); 
+            name = user; 
+        }
+    ); 
+}

@@ -1,0 +1,5 @@
+WOMappedRollover: WOMappedRollover {
+	imageFile = "splash.gif";
+	imageMap = application.imageMap;
+	imageName = "splash";
+}

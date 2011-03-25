@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wodefinitions>
+	<wo class="WXImage" wocomponentcontent="false">
+
+		<binding name="alt"/>
+		<binding name="border"/>
+		<binding name="filename" defaults="Resources"/>
+		<binding name="framework" defaults="Frameworks"/>
+		<binding name="src"/>
+		<binding name="mimeType" defaults="MIME Types"/>
+		<binding name="key"/>
+
+		<validation message="One of the bindings &apos;filename&apos; &amp; &apos;src&apos; must be set.">
+			<or>
+				<unbound name="filename"/>
+				<unbound name="src"/>
+			</or>
+		</validation>
+	</wo>
+</wodefinitions>
